@@ -1,0 +1,735 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Academia - College Management Platform</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://code.iconify.design/3/3.1.0/iconify.min.js"></script>
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link href="style.css" />
+    <link rel="stylesheet" href="script.js" />
+    <link
+      id="all-fonts-link-font-geist"
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Geist:wght@300;400;500;600;700&amp;display=swap"
+    />
+    <style id="all-fonts-style-font-geist">
+      .font-geist {
+        font-family: "Geist", sans-serif !important;
+      }
+    </style>
+    <link
+      id="all-fonts-link-font-roboto"
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;600;700&amp;display=swap"/>
+    <style id="all-fonts-style-font-roboto">
+      .font-roboto {
+        font-family: "Roboto", sans-serif !important;
+      }
+    </style>
+    <link
+      id="all-fonts-link-font-montserrat"
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&amp;display=swap"/>
+    <style id="all-fonts-style-font-montserrat">
+      .font-montserrat {
+        font-family: "Montserrat", sans-serif !important;
+      }
+    </style>
+    <link
+      id="all-fonts-link-font-poppins"
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&amp;display=swap"/>
+    <style id="all-fonts-style-font-poppins">
+      .font-poppins {
+        font-family: "Poppins", sans-serif !important;
+      }
+    </style>
+    <link
+      id="all-fonts-link-font-playfair"
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;900&amp;display=swap"
+    />
+    <style id="all-fonts-style-font-playfair">
+      .font-playfair {
+        font-family: "Playfair Display", serif !important;
+      }
+    </style>
+    <link
+      id="all-fonts-link-font-instrument-serif"
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Instrument+Serif:wght@400;500;600;700&amp;display=swap"
+    />
+    <style id="all-fonts-style-font-instrument-serif">
+      .font-instrument-serif {
+        font-family: "Instrument Serif", serif !important;
+      }
+    </style>
+    <link
+      id="all-fonts-link-font-merriweather"
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700;900&amp;display=swap"
+    />
+    <style id="all-fonts-style-font-merriweather">
+      .font-merriweather {
+        font-family: "Merriweather", serif !important;
+      }
+    </style>
+    <link
+      id="all-fonts-link-font-bricolage"
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@300;400;500;600;700&amp;display=swap"
+    />
+    <style id="all-fonts-style-font-bricolage">
+      .font-bricolage {
+        font-family: "Bricolage Grotesque", sans-serif !important;
+      }
+    </style>
+    <link
+      id="all-fonts-link-font-jakarta"
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&amp;display=swap"
+    />
+    <style id="all-fonts-style-font-jakarta">
+      .font-jakarta {
+        font-family: "Plus Jakarta Sans", sans-serif !important;
+      }
+    </style>
+    <link
+      id="all-fonts-link-font-manrope"
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800&amp;display=swap"
+    />
+    <style id="all-fonts-style-font-manrope">
+      .font-manrope {
+        font-family: "Manrope", sans-serif !important;
+      }
+    </style>
+    <link
+      id="all-fonts-link-font-space-grotesk"
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&amp;display=swap"
+    />
+    <style id="all-fonts-style-font-space-grotesk">
+      .font-space-grotesk {
+        font-family: "Space Grotesk", sans-serif !important;
+      }
+    </style>
+    <link
+      id="all-fonts-link-font-work-sans"
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400;500;600;700;800&amp;display=swap"
+    />
+    <style id="all-fonts-style-font-work-sans">
+      .font-work-sans {
+        font-family: "Work Sans", sans-serif !important;
+      }
+    </style>
+    <link
+      id="all-fonts-link-font-pt-serif"
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=PT+Serif:wght@400;700&amp;display=swap"
+    />
+    <style id="all-fonts-style-font-pt-serif">
+      .font-pt-serif {
+        font-family: "PT Serif", serif !important;
+      }
+    </style>
+    <link
+      id="all-fonts-link-font-geist-mono"
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Geist+Mono:wght@300;400;500;600;700&amp;display=swap"
+    />
+    <style id="all-fonts-style-font-geist-mono">
+      .font-geist-mono {
+        font-family: "Geist Mono", monospace !important;
+      }
+    </style>
+    <link
+      id="all-fonts-link-font-space-mono"
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&amp;display=swap"
+    />
+    <style id="all-fonts-style-font-space-mono">
+      .font-space-mono {
+        font-family: "Space Mono", monospace !important;
+      }
+    </style>
+    <link
+      id="all-fonts-link-font-quicksand"
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&amp;display=swap"
+    />
+    <style id="all-fonts-style-font-quicksand">
+      .font-quicksand {
+        font-family: "Quicksand", sans-serif !important;
+      }
+    </style>
+    <link
+      id="all-fonts-link-font-nunito"
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;500;600;700;800&amp;display=swap"
+    />
+    <style id="all-fonts-style-font-nunito">
+      .font-nunito {
+        font-family: "Nunito", sans-serif !important;
+      }
+    </style>
+    <link
+      id="all-fonts-link-font-newsreader"
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,400..800&amp;display=swap"
+    />
+    <style id="all-fonts-style-font-newsreader">
+      .font-newsreader {
+        font-family: "Newsreader", serif !important;
+      }
+    </style>
+    <link
+      id="all-fonts-link-font-google-sans-flex"
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Google+Sans+Flex:wght@400;500;600;700&amp;display=swap"
+    />
+    <style id="all-fonts-style-font-google-sans-flex">
+      .font-google-sans-flex {
+        font-family: "Google Sans Flex", sans-serif !important;
+      }
+    </style>
+    <link
+      id="all-fonts-link-font-oswald"
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;600;700&amp;display=swap"
+    />
+    <style id="all-fonts-style-font-oswald">
+      .font-oswald {
+        font-family: "Oswald", sans-serif !important;
+      }
+    </style>
+    <link
+      id="all-fonts-link-font-dm-sans"
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;600;700&amp;display=swap"
+    />
+    <style id="all-fonts-style-font-dm-sans">
+      .font-dm-sans {
+        font-family: "DM Sans", sans-serif !important;
+      }
+    </style>
+  </head>
+  <body
+    class="text-zinc-900 antialiased selection:bg-zinc-900 selection:text-white flex h-screen overflow-hidden relative"
+  >
+    <!-- Background Layer -->
+    <div class="fixed inset-0 -z-10 h-full w-full bg-zinc-50">
+      <!-- Dot Pattern -->
+      <div
+        class="absolute h-full w-full bg-[radial-gradient(#e5e7eb_1px,transparent_1px)] [background-size:16px_16px] [mask-image:radial-gradient(ellipse_50%_50%_at_50%_50%,#000_70%,transparent_100%)]"
+      ></div>
+      <!-- Subtle Gradient Orbs -->
+      <div
+        class="absolute top-[-10%] left-[-10%] h-[500px] w-[500px] rounded-full bg-blue-400/10 blur-[100px]"
+      ></div>
+      <div
+        class="absolute bottom-[-10%] right-[-10%] h-[500px] w-[500px] rounded-full bg-purple-400/10 blur-[100px]"
+      ></div>
+    </div>
+
+    <!-- Sidebar -->
+    <aside
+      class="w-64 bg-white/80 backdrop-blur-xl border-r border-zinc-200 hidden md:flex flex-col flex-shrink-0 z-20"
+    >
+      <!-- Logo Area -->
+      <div class="h-16 flex items-center px-6 border-b border-zinc-100">
+        <div class="flex items-center gap-2 text-zinc-900">
+          <div
+            class="w-8 h-8 bg-zinc-900 text-white rounded-lg flex items-center justify-center shadow-lg shadow-zinc-900/20"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              aria-hidden="true"
+              role="img"
+              width="18"
+              height="18"
+              viewBox="0 0 24 24"
+              data-icon="lucide:graduation-cap"
+              data-width="18"
+              class="iconify iconify--lucide"
+            >
+              <g
+                fill="none"
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+              >
+                <path
+                  d="M21.42 10.922a1 1 0 0 0-.019-1.838L12.83 5.18a2 2 0 0 0-1.66 0L2.6 9.08a1 1 0 0 0 0 1.832l8.57 3.908a2 2 0 0 0 1.66 0zM22 10v6"
+                ></path>
+                <path d="M6 12.5V16a6 3 0 0 0 12 0v-3.5"></path>
+              </g>
+            </svg>
+          </div>
+          <span class="text-sm font-semibold tracking-tight">ACADEMIA</span>
+        </div>
+      </div>
+
+      <!-- Navigation -->
+      <nav
+        class="flex-1 overflow-y-auto no-scrollbar pt-4 pr-3 pb-4 pl-3 space-y-1"
+      >
+        <div
+          class="px-3 mb-2 text-xs font-medium text-zinc-400 uppercase tracking-wider"
+        >
+          Overview
+        </div>
+
+        <a
+          href="#"
+          class="flex items-center gap-3 px-3 py-2 text-sm font-medium rounded-md bg-zinc-50 text-zinc-900 border border-zinc-200/60 shadow-sm"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            aria-hidden="true"
+            role="img"
+            width="18"
+            height="18"
+            viewBox="0 0 24 24"
+            data-icon="lucide:layout-dashboard"
+            data-width="18"
+            class="iconify text-zinc-900 iconify--lucide"
+          >
+            <g
+              fill="none"
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+            >
+              <rect width="7" height="9" x="3" y="3" rx="1"></rect>
+              <rect width="7" height="5" x="14" y="3" rx="1"></rect>
+              <rect width="7" height="9" x="14" y="12" rx="1"></rect>
+              <rect width="7" height="5" x="3" y="16" rx="1"></rect>
+            </g>
+          </svg>
+          Dashboard
+        </a>
+        <a href="index.html">
+           <button>Dashboard</button>
+        </a>
+
+        <a
+          href="student.html"
+          class="flex items-center gap-3 hover:text-zinc-900 hover:bg-zinc-50 transition-all text-sm font-medium text-zinc-500 rounded-md pt-2 pr-3 pb-2 pl-3"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            aria-hidden="true"
+            role="img"
+            width="18"
+            height="18"
+            viewBox="0 0 24 24"
+            data-icon="lucide:users"
+            data-width="18"
+            class="iconify iconify--lucide"
+          >
+            <g
+              fill="none"
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+            >
+              <path
+                d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2M16 3.128a4 4 0 0 1 0 7.744M22 21v-2a4 4 0 0 0-3-3.87"
+              ></path>
+              <circle cx="9" cy="7" r="4"></circle>
+            </g>
+          </svg>
+          Students
+        </a>
+
+        <a
+          href="faculty.html"
+          class="flex items-center gap-3 hover:text-zinc-900 hover:bg-zinc-50 transition-all text-sm font-medium text-zinc-500 rounded-md pt-2 pr-3 pb-2 pl-3"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            aria-hidden="true"
+            role="img"
+            width="18"
+            height="18"
+            viewBox="0 0 24 24"
+            data-icon="lucide:briefcase"
+            data-width="18"
+            class="iconify iconify--lucide"
+          >
+            <g
+              fill="none"
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+            >
+              <path d="M16 20V4a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path>
+              <rect width="20" height="14" x="2" y="6" rx="2"></rect>
+            </g>
+          </svg>
+          Faculty </a>
+        <a
+          href="#"
+          class="flex items-center gap-3 px-3 py-2 text-sm font-medium rounded-md text-zinc-500 hover:text-zinc-900 hover:bg-zinc-50 transition-all"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            aria-hidden="true"
+            role="img"
+            width="18"
+            height="18"
+            viewBox="0 0 24 24"
+            data-icon="lucide:book-open"
+            data-width="18"
+            class="iconify iconify--lucide"
+          >
+            <path
+              fill="none"
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M12 7v14m-9-3a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h5a4 4 0 0 1 4 4a4 4 0 0 1 4-4h5a1 1 0 0 1 1 1v13a1 1 0 0 1-1 1h-6a3 3 0 0 0-3 3a3 3 0 0 0-3-3z"
+            ></path>
+          </svg>
+          Courses
+        </a>
+
+        <div
+          class="px-3 mt-6 mb-2 text-xs font-medium text-zinc-400 uppercase tracking-wider"
+        >
+          Management
+        </div>
+
+        <a href="Schedule.html"
+          class="flex items-center gap-3 px-3 py-2 text-sm font-medium rounded-md text-zinc-500 hover:text-zinc-900 hover:bg-zinc-50 transition-all">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            aria-hidden="true"
+            role="img"
+            width="18"
+            height="18"
+            viewBox="0 0 24 24"
+            data-icon="lucide:calendar-days"
+            data-width="18"
+            class="iconify iconify--lucide"
+          >
+            <g
+              fill="none"
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+            >
+              <path d="M8 2v4m8-4v4"></path>
+              <rect width="18" height="18" x="3" y="4" rx="2"></rect>
+              <path
+                d="M3 10h18M8 14h.01M12 14h.01M16 14h.01M8 18h.01M12 18h.01M16 18h.01"
+              ></path>
+            </g>
+          </svg>
+          Schedule
+        </a>
+        <a
+          href="Exam&Grades.html"
+          class="flex items-center gap-3 px-3 py-2 text-sm font-medium rounded-md text-zinc-500 hover:text-zinc-900 hover:bg-zinc-50 transition-all"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            aria-hidden="true"
+            role="img"
+            width="18"
+            height="18"
+            viewBox="0 0 24 24"
+            data-icon="lucide:file-text"
+            data-width="18"
+            class="iconify iconify--lucide"
+          >
+            <g
+              fill="none"
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+            >
+              <path
+                d="M6 22a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h8a2.4 2.4 0 0 1 1.704.706l3.588 3.588A2.4 2.4 0 0 1 20 8v12a2 2 0 0 1-2 2z"
+              ></path>
+              <path d="M14 2v5a1 1 0 0 0 1 1h5M10 9H8m8 4H8m8 4H8"></path>
+            </g>
+          </svg>
+          Exams &amp; Grades
+        </a>
+        <a
+          href="Finance.html"
+          class="flex items-center gap-3 px-3 py-2 text-sm font-medium rounded-md text-zinc-500 hover:text-zinc-900 hover:bg-zinc-50 transition-all"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            aria-hidden="true"
+            role="img"
+            width="18"
+            height="18"
+            viewBox="0 0 24 24"
+            data-icon="lucide:wallet"
+            data-width="18"
+            class="iconify iconify--lucide"
+          >
+            <g
+              fill="none"
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+            >
+              <path
+                d="M19 7V4a1 1 0 0 0-1-1H5a2 2 0 0 0 0 4h15a1 1 0 0 1 1 1v4h-3a2 2 0 0 0 0 4h3a1 1 0 0 0 1-1v-2a1 1 0 0 0-1-1"
+              ></path>
+              <path d="M3 5v14a2 2 0 0 0 2 2h15a1 1 0 0 0 1-1v-4"></path>
+            </g>
+          </svg>
+          Finance
+        </a>
+
+        <div
+          class="px-3 mt-6 mb-2 text-xs font-medium text-zinc-400 uppercase tracking-wider"
+        >
+          System
+        </div>
+
+        <a
+          href="#"
+          class="flex items-center gap-3 hover:text-zinc-900 hover:bg-zinc-50 transition-all text-sm font-medium text-zinc-500 rounded-md pt-2 pr-3 pb-2 pl-3"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            aria-hidden="true"
+            role="img"
+            width="18"
+            height="18"
+            viewBox="0 0 24 24"
+            data-icon="lucide:bar-chart-3"
+            data-width="18"
+            class="iconify iconify--lucide"
+          >
+            <path
+              fill="none"
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M3 3v18h18m-3-4V9m-5 8V5M8 17v-3"
+            ></path>
+          </svg>
+          Reports
+        </a>
+        <a
+          href="#"
+          class="flex items-center gap-3 px-3 py-2 text-sm font-medium rounded-md text-zinc-500 hover:text-zinc-900 hover:bg-zinc-50 transition-all"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            aria-hidden="true"
+            role="img"
+            width="18"
+            height="18"
+            viewBox="0 0 24 24"
+            data-icon="lucide:settings"
+            data-width="18"
+            class="iconify iconify--lucide"
+          >
+            <g
+              fill="none"
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+            >
+              <path
+                d="M9.671 4.136a2.34 2.34 0 0 1 4.659 0a2.34 2.34 0 0 0 3.319 1.915a2.34 2.34 0 0 1 2.33 4.033a2.34 2.34 0 0 0 0 3.831a2.34 2.34 0 0 1-2.33 4.033a2.34 2.34 0 0 0-3.319 1.915a2.34 2.34 0 0 1-4.659 0a2.34 2.34 0 0 0-3.32-1.915a2.34 2.34 0 0 1-2.33-4.033a2.34 2.34 0 0 0 0-3.831A2.34 2.34 0 0 1 6.35 6.051a2.34 2.34 0 0 0 3.319-1.915"
+              ></path>
+              <circle cx="12" cy="12" r="3"></circle>
+            </g>
+          </svg>
+          Settings
+        </a>
+      </nav>
+
+      <!-- User Profile -->
+      <div class="p-4 border-t border-zinc-100">
+        <button
+          class="flex items-center gap-3 w-full hover:bg-zinc-50 p-2 rounded-md transition-colors text-left group"
+        >
+          <div
+            class="w-8 h-8 rounded-full bg-zinc-200 flex items-center justify-center text-zinc-600"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              aria-hidden="true"
+              role="img"
+              width="16"
+              height="16"
+              viewBox="0 0 24 24"
+              data-icon="lucide:user"
+              data-width="16"
+              class="iconify iconify--lucide"
+            >
+              <g
+                fill="none"
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+              >
+                <path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"></path>
+                <circle cx="12" cy="7" r="4"></circle>
+              </g>
+            </svg>
+          </div>
+          <div class="flex-1 min-w-0">
+            <p
+              class="group-hover:text-zinc-950 truncate text-sm font-medium text-zinc-900"
+            >
+              Hey, OM
+            </p>
+            <p class="text-xs text-zinc-500 truncate">Administrator</p>
+          </div>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            aria-hidden="true"
+            role="img"
+            width="14"
+            height="14"
+            viewBox="0 0 24 24"
+            data-icon="lucide:chevrons-up-down"
+            data-width="14"
+            class="iconify text-zinc-400 iconify--lucide"
+          >
+            <path
+              fill="none"
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="m7 15l5 5l5-5M7 9l5-5l5 5"
+            ></path>
+          </svg>
+        </button>
+      </div>
+    </aside>
+
+    <!-- Main Content -->
+    <h1 class="text-2xl font-semibold text-zinc-900 mb-6">
+    Add Faculty
+   </h1>
+
+    <form class="bg-white/80 p-6 rounded-xl border border-zinc-200 max-w-4xl space-y-4">
+
+        <div>
+            <label class="block text-sm font-medium text-zinc-700">Faculty Name</label>
+            <input type="text" required
+                   class="mt-1 w-full h-9 px-3 border rounded-md text-sm focus:ring-1 focus:ring-zinc-300">
+        </div>
+
+        <div>
+            <label class="block text-sm font-medium text-zinc-700">Faculty ID no.</label>
+            <input type="number" required
+                   class="mt-1 w-full h-9 px-3 border rounded-md text-sm focus:ring-1 focus:ring-zinc-300">
+        </div>
+
+        <div>
+            <label class="block text-sm font-medium text-zinc-700">Course</label>
+            <select class="mt-1 w-full h-9 px-3 border rounded-md text-sm" required>
+                <option></option>
+                <option>Bachelor In Computer Application</option>
+                <option>Bachelor In Business Administrator</option>
+                <option>Deploma In computer Application</option>
+                <option>O Level</option>
+                <option>Robotics</option>
+                <option>Mechatronics</option>
+                <option>Automotive </option>
+                <option>Aerospace</option>
+                <option>Thermodynamics</option>
+                <option>Fluid Mechanics</option>
+                <option>Reaction Engineering</option>
+            </select>
+        </div>
+
+        <div>
+            <label class="block text-sm font-medium text-zinc-700">Time </label>
+            <input  type="time" required 
+                   class="mt-1 w-full h-9 px-3 border rounded-md text-sm focus:ring-1 focus:ring-zinc-300">
+        </div>
+
+         <div>
+            <label class="block text-sm font-medium text-zinc-700">Date </label>
+            <input  type="date" required 
+                   class="mt-1 w-full h-9 px-3 border rounded-md text-sm focus:ring-1 focus:ring-zinc-300">
+        </div>
+
+        <div>
+            <label class="block text-sm font-medium text-zinc-700">Contact No.</label>
+            <input type="tel" required
+                   class="mt-1 w-full h-9 px-3 border rounded-md text-sm focus:ring-1 focus:ring-zinc-300">
+        </div>
+
+        <div>
+            <label class="block text-sm font-medium text-zinc-700">Email</label>
+            <input type="email" required
+                   class="mt-1 w-full h-9 px-3 border rounded-md text-sm">
+        </div>
+    
+        <div>
+            <label class="block text-sm font-medium text-zinc-700">Department</label>
+            <select class="mt-1 w-full h-9 px-3 border rounded-md text-sm" required>
+                 <option></option>
+                <option>Computer Science</option>
+                <option>Business </option>
+                <option>Information Technology</option>
+                <option>Machenical Engineering</option>
+                <option>Chamical Engineering</option>
+            </select>
+        </div>
+    
+        <div class="flex gap-3 pt-4">
+            <button type="submit"
+                    class="bg-zinc-900 text-white px-4 py-2 rounded-md text-sm">
+                Save
+            </button>
+    
+            <a href="index.html"
+               class="px-4 py-2 border rounded-md text-sm text-zinc-700">
+                Cancel
+            </a>
+        </div>
+    </form>
+
+
+          <!-- Footer -->
+          <div
+            class="flex items-center justify-between pt-8 pb-4 border-t border-zinc-200"
+          >
+            <p class="text-xs text-zinc-400">© 2024 Academia System Inc.</p>
+            <div class="flex gap-4 text-xs text-zinc-500">
+              <a href="#" class="hover:text-zinc-900">Privacy</a>
+              <a href="#" class="hover:text-zinc-900">Help</a>
+              <a href="#" class="hover:text-zinc-900">Status</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
