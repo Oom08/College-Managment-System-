@@ -1,0 +1,1860 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Academia - College Management Platform</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://code.iconify.design/3/3.1.0/iconify.min.js"></script>
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&amp;display=swap"
+      rel="stylesheet"
+    />
+   <link rel="stylesheet" href="style.css" />
+
+    <script src="script.js"></script>
+    <link
+      id="all-fonts-link-font-geist"
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Geist:wght@300;400;500;600;700&amp;display=swap"
+    />
+
+    <style id="all-fonts-style-font-geist">
+      .font-geist {
+        font-family: "Geist", sans-serif !important;
+      }
+    </style>
+
+    <link
+      id="all-fonts-link-font-roboto"
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;600;700&amp;display=swap"
+    />
+
+    <style id="all-fonts-style-font-roboto">
+      .font-roboto {
+        font-family: "Roboto", sans-serif !important;
+      }
+    </style>
+
+    <link
+      id="all-fonts-link-font-montserrat"
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&amp;display=swap"
+    />
+
+    <style id="all-fonts-style-font-montserrat">
+      .font-montserrat {
+        font-family: "Montserrat", sans-serif !important;
+      }
+    </style>
+
+    <link
+      id="all-fonts-link-font-poppins"
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&amp;display=swap"
+    />
+
+    <style id="all-fonts-style-font-poppins">
+      .font-poppins {
+        font-family: "Poppins", sans-serif !important;
+      }
+    </style>
+
+    <link
+      id="all-fonts-link-font-playfair"
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;900&amp;display=swap"
+    />
+
+    <style id="all-fonts-style-font-playfair">
+      .font-playfair {
+        font-family: "Playfair Display", serif !important;
+      }
+    </style>
+
+    <link
+      id="all-fonts-link-font-instrument-serif"
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Instrument+Serif:wght@400;500;600;700&amp;display=swap"
+    />
+
+    <style id="all-fonts-style-font-instrument-serif">
+      .font-instrument-serif {
+        font-family: "Instrument Serif", serif !important;
+      }
+    </style>
+
+    <link
+      id="all-fonts-link-font-merriweather"
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700;900&amp;display=swap"
+    />
+
+    <style id="all-fonts-style-font-merriweather">
+      .font-merriweather {
+        font-family: "Merriweather", serif !important;
+      }
+    </style>
+
+    <link
+      id="all-fonts-link-font-bricolage"
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@300;400;500;600;700&amp;display=swap"
+    />
+
+    <style id="all-fonts-style-font-bricolage">
+      .font-bricolage {
+        font-family: "Bricolage Grotesque", sans-serif !important;
+      }
+    </style>
+
+    <link
+      id="all-fonts-link-font-jakarta"
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&amp;display=swap"
+    />
+
+    <style id="all-fonts-style-font-jakarta">
+      .font-jakarta {
+        font-family: "Plus Jakarta Sans", sans-serif !important;
+      }
+    </style>
+
+    <link
+      id="all-fonts-link-font-manrope"
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800&amp;display=swap"
+    />
+
+    <style id="all-fonts-style-font-manrope">
+      .font-manrope {
+        font-family: "Manrope", sans-serif !important;
+      }
+    </style>
+
+    <link
+      id="all-fonts-link-font-space-grotesk"
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&amp;display=swap"
+    />
+
+    <style id="all-fonts-style-font-space-grotesk">
+      .font-space-grotesk {
+        font-family: "Space Grotesk", sans-serif !important;
+      }
+    </style>
+
+    <link
+      id="all-fonts-link-font-work-sans"
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400;500;600;700;800&amp;display=swap"
+    />
+
+    <style id="all-fonts-style-font-work-sans">
+      .font-work-sans {
+        font-family: "Work Sans", sans-serif !important;
+      }
+    </style>
+
+    <link
+      id="all-fonts-link-font-pt-serif"
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=PT+Serif:wght@400;700&amp;display=swap"
+    />
+
+    <style id="all-fonts-style-font-pt-serif">
+      .font-pt-serif {
+        font-family: "PT Serif", serif !important;
+      }
+    </style>
+
+    <link
+      id="all-fonts-link-font-geist-mono"
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Geist+Mono:wght@300;400;500;600;700&amp;display=swap"
+    />
+
+    <style id="all-fonts-style-font-geist-mono">
+      .font-geist-mono {
+        font-family: "Geist Mono", monospace !important;
+      }
+    </style>
+
+    <link
+      id="all-fonts-link-font-space-mono"
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&amp;display=swap"
+    />
+
+    <style id="all-fonts-style-font-space-mono">
+      .font-space-mono {
+        font-family: "Space Mono", monospace !important;
+      }
+    </style>
+
+    <link
+      id="all-fonts-link-font-quicksand"
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&amp;display=swap"
+    />
+
+    <style id="all-fonts-style-font-quicksand">
+      .font-quicksand {
+        font-family: "Quicksand", sans-serif !important;
+      }
+    </style>
+
+    <link
+      id="all-fonts-link-font-nunito"
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;500;600;700;800&amp;display=swap"
+    />
+
+    <style id="all-fonts-style-font-nunito">
+      .font-nunito {
+        font-family: "Nunito", sans-serif !important;
+      }
+    </style>
+
+    <link
+      id="all-fonts-link-font-newsreader"
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,400..800&amp;display=swap"
+    />
+
+    <style id="all-fonts-style-font-newsreader">
+      .font-newsreader {
+        font-family: "Newsreader", serif !important;
+      }
+    </style>
+
+    <link
+      id="all-fonts-link-font-google-sans-flex"
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Google+Sans+Flex:wght@400;500;600;700&amp;display=swap"
+    />
+
+    <style id="all-fonts-style-font-google-sans-flex">
+      .font-google-sans-flex {
+        font-family: "Google Sans Flex", sans-serif !important;
+      }
+    </style>
+
+    <link
+      id="all-fonts-link-font-oswald"
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;600;700&amp;display=swap"
+    />
+
+    <style id="all-fonts-style-font-oswald">
+      .font-oswald {
+        font-family: "Oswald", sans-serif !important;
+      }
+    </style>
+
+    <link
+      id="all-fonts-link-font-dm-sans"
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;600;700&amp;display=swap"
+    />
+
+    <style id="all-fonts-style-font-dm-sans">
+      .font-dm-sans {
+        font-family: "DM Sans", sans-serif !important;
+      }
+    </style>
+  </head>
+
+  <body
+    class="text-zinc-900 antialiased selection:bg-zinc-900 selection:text-white flex h-screen overflow-hidden relative"
+  >
+    <!-- Background Layer -->
+
+    <div class="fixed inset-0 -z-10 h-full w-full bg-zinc-50">  
+      <!-- Dot Pattern -->                      
+
+      <div
+        class="absolute h-full w-full bg-[radial-gradient(#e5e7eb_1px,transparent_1px)] [background-size:16px_16px] [mask-image:radial-gradient(ellipse_50%_50%_at_50%_50%,#000_70%,transparent_100%)]"
+      ></div>
+
+      <!-- Subtle Gradient Orbs -->
+
+      <div
+        class="absolute top-[-10%] left-[-10%] h-[500px] w-[500px] rounded-full bg-blue-400/10 blur-[100px]"
+      ></div>
+
+      <div
+        class="absolute bottom-[-10%] right-[-10%] h-[500px] w-[500px] rounded-full bg-purple-400/10 blur-[100px]"
+      ></div>
+    </div>
+
+    <!-- Sidebar -->
+
+    <aside
+      class="w-64 bg-white/80 backdrop-blur-xl border-r border-zinc-200 hidden md:flex flex-col flex-shrink-0 z-20"
+    >
+      <!-- Logo Area -->
+
+      <div class="h-16 flex items-center px-6 border-b border-zinc-100">
+        <div class="flex items-center gap-2 text-zinc-900">
+          <div
+            class="w-8 h-8 bg-zinc-900 text-white rounded-lg flex items-center justify-center shadow-lg shadow-zinc-900/20"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              aria-hidden="true"
+              role="img"
+              width="18"
+              height="18"
+              viewBox="0 0 24 24"
+              data-icon="lucide:graduation-cap"
+              data-width="18"
+              class="iconify iconify--lucide"
+            >
+              <g
+                fill="none"
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+              >
+                <path
+                  d="M21.42 10.922a1 1 0 0 0-.019-1.838L12.83 5.18a2 2 0 0 0-1.66 0L2.6 9.08a1 1 0 0 0 0 1.832l8.57 3.908a2 2 0 0 0 1.66 0zM22 10v6"
+                ></path>
+
+                <path d="M6 12.5V16a6 3 0 0 0 12 0v-3.5"></path>
+              </g>
+            </svg>
+          </div>
+
+          <span class="text-sm font-semibold tracking-tight">ACADEMIA</span>
+        </div>
+      </div>
+
+      <!-- Navigation -->
+
+      <nav
+        class="flex-1 overflow-y-auto no-scrollbar pt-4 pr-3 pb-4 pl-3 space-y-1"
+      >
+        <div
+          class="px-3 mb-2 text-xs font-medium text-zinc-400 uppercase tracking-wider"
+        >
+          Overview
+        </div>
+
+        <a
+          href="#"
+          class="flex items-center gap-3 px-3 py-2 text-sm font-medium rounded-md bg-zinc-50 text-zinc-900 border border-zinc-200/60 shadow-sm"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            aria-hidden="true"
+            role="img"
+            width="18"
+            height="18"
+            viewBox="0 0 24 24"
+            data-icon="lucide:layout-dashboard"
+            data-width="18"
+            class="iconify text-zinc-900 iconify--lucide"
+          >
+            <g
+              fill="none"
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+            >
+              <rect width="7" height="9" x="3" y="3" rx="1"></rect>
+
+              <rect width="7" height="5" x="14" y="3" rx="1"></rect>
+
+              <rect width="7" height="9" x="14" y="12" rx="1"></rect>
+
+              <rect width="7" height="5" x="3" y="16" rx="1"></rect>
+            </g>
+          </svg>
+
+          Dashboard
+        </a>
+
+        <a
+          href="student.html"
+          class="flex items-center gap-3 hover:text-zinc-900 hover:bg-zinc-50 transition-all text-sm font-medium text-zinc-500 rounded-md pt-2 pr-3 pb-2 pl-3"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            aria-hidden="true"
+            role="img"
+            width="18"
+            height="18"
+            viewBox="0 0 24 24"
+            data-icon="lucide:users"
+            data-width="18"
+            class="iconify iconify--lucide"
+          >
+            <g
+              fill="none"
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+            >
+              <path
+                d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2M16 3.128a4 4 0 0 1 0 7.744M22 21v-2a4 4 0 0 0-3-3.87"
+              ></path>
+
+              <circle cx="9" cy="7" r="4"></circle>
+            </g>
+          </svg>
+
+          Students
+        </a>
+
+        <a
+          href="/#"
+          class="flex items-center gap-3 hover:text-zinc-900 hover:bg-zinc-50 transition-all text-sm font-medium text-zinc-500 rounded-md pt-2 pr-3 pb-2 pl-3"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            aria-hidden="true"
+            role="img"
+            width="18"
+            height="18"
+            viewBox="0 0 24 24"
+            data-icon="lucide:briefcase"
+            data-width="18"
+            class="iconify iconify--lucide"
+          >
+            <g
+              fill="none"
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+            >
+              <path d="M16 20V4a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path>
+
+              <rect width="20" height="14" x="2" y="6" rx="2"></rect>
+            </g>
+          </svg>
+
+          Faculty
+        </a>
+
+        <a
+          href="#"
+          class="flex items-center gap-3 px-3 py-2 text-sm font-medium rounded-md text-zinc-500 hover:text-zinc-900 hover:bg-zinc-50 transition-all"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            aria-hidden="true"
+            role="img"
+            width="18"
+            height="18"
+            viewBox="0 0 24 24"
+            data-icon="lucide:book-open"
+            data-width="18"
+            class="iconify iconify--lucide"
+          >
+            <path
+              fill="none"
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M12 7v14m-9-3a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h5a4 4 0 0 1 4 4a4 4 0 0 1 4-4h5a1 1 0 0 1 1 1v13a1 1 0 0 1-1 1h-6a3 3 0 0 0-3 3a3 3 0 0 0-3-3z"
+            ></path>
+          </svg>
+
+          Courses
+        </a>
+
+        <div
+          class="px-3 mt-6 mb-2 text-xs font-medium text-zinc-400 uppercase tracking-wider"
+        >
+          Management
+        </div>
+
+        <a
+          href="Schedule.html"
+          class="flex items-center gap-3 px-3 py-2 text-sm font-medium rounded-md text-zinc-500 hover:text-zinc-900 hover:bg-zinc-50 transition-all"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            aria-hidden="true"
+            role="img"
+            width="18"
+            height="18"
+            viewBox="0 0 24 24"
+            data-icon="lucide:calendar-days"
+            data-width="18"
+            class="iconify iconify--lucide"
+          >
+            <g
+              fill="none"
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+            >
+              <path d="M8 2v4m8-4v4"></path>
+
+              <rect width="18" height="18" x="3" y="4" rx="2"></rect>
+              <path
+                d="M3 10h18M8 14h.01M12 14h.01M16 14h.01M8 18h.01M12 18h.01M16 18h.01"
+              ></path>
+            </g>
+          </svg>
+          Schedule
+        </a>
+
+        <a
+          href="Exam&Grades.html"
+          class="flex items-center gap-3 px-3 py-2 text-sm font-medium rounded-md text-zinc-500 hover:text-zinc-900 hover:bg-zinc-50 transition-all"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            aria-hidden="true"
+            role="img"
+            width="18"
+            height="18"
+            viewBox="0 0 24 24"
+            data-icon="lucide:file-text"
+            data-width="18"
+            class="iconify iconify--lucide"
+          >
+            <g
+              fill="none"
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+            >
+              <path
+                d="M6 22a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h8a2.4 2.4 0 0 1 1.704.706l3.588 3.588A2.4 2.4 0 0 1 20 8v12a2 2 0 0 1-2 2z"
+              ></path>
+
+              <path d="M14 2v5a1 1 0 0 0 1 1h5M10 9H8m8 4H8m8 4H8"></path>
+            </g>
+          </svg>
+
+          Exams &amp; Grades
+        </a>
+
+        <a
+          href="Finance.html"
+          class="flex items-center gap-3 px-3 py-2 text-sm font-medium rounded-md text-zinc-500 hover:text-zinc-900 hover:bg-zinc-50 transition-all"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            aria-hidden="true"
+            role="img"
+            width="18"
+            height="18"
+            viewBox="0 0 24 24"
+            data-icon="lucide:wallet"
+            data-width="18"
+            class="iconify iconify--lucide"
+          >
+            <g
+              fill="none"
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+            >
+              <path
+                d="M19 7V4a1 1 0 0 0-1-1H5a2 2 0 0 0 0 4h15a1 1 0 0 1 1 1v4h-3a2 2 0 0 0 0 4h3a1 1 0 0 0 1-1v-2a1 1 0 0 0-1-1"
+              ></path>
+
+              <path d="M3 5v14a2 2 0 0 0 2 2h15a1 1 0 0 0 1-1v-4"></path>
+            </g>
+          </svg>
+
+          Finance
+        </a>
+
+        <div
+          class="px-3 mt-6 mb-2 text-xs font-medium text-zinc-400 uppercase tracking-wider"
+        >
+          System
+        </div>
+
+        <a
+          href=""
+          class="flex items-center gap-3 hover:text-zinc-900 hover:bg-zinc-50 transition-all text-sm font-medium text-zinc-500 rounded-md pt-2 pr-3 pb-2 pl-3"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            aria-hidden="true"
+            role="img"
+            width="18"
+            height="18"
+            viewBox="0 0 24 24"
+            data-icon="lucide:bar-chart-3"
+            data-width="18"
+            class="iconify iconify--lucide"
+          >
+            <path
+              fill="none"
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M3 3v18h18m-3-4V9m-5 8V5M8 17v-3"
+            ></path>
+          </svg>
+
+          Reports
+        </a>
+
+        <a
+          href="#"
+          class="flex items-center gap-3 px-3 py-2 text-sm font-medium rounded-md text-zinc-500 hover:text-zinc-900 hover:bg-zinc-50 transition-all"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            aria-hidden="true"
+            role="img"
+            width="18"
+            height="18"
+            viewBox="0 0 24 24"
+            data-icon="lucide:settings"
+            data-width="18"
+            class="iconify iconify--lucide"
+          >
+            <g
+              fill="none"
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+            >
+              <path
+                d="M9.671 4.136a2.34 2.34 0 0 1 4.659 0a2.34 2.34 0 0 0 3.319 1.915a2.34 2.34 0 0 1 2.33 4.033a2.34 2.34 0 0 0 0 3.831a2.34 2.34 0 0 1-2.33 4.033a2.34 2.34 0 0 0-3.319 1.915a2.34 2.34 0 0 1-4.659 0a2.34 2.34 0 0 0-3.32-1.915a2.34 2.34 0 0 1-2.33-4.033a2.34 2.34 0 0 0 0-3.831A2.34 2.34 0 0 1 6.35 6.051a2.34 2.34 0 0 0 3.319-1.915"
+              ></path>
+
+              <circle cx="12" cy="12" r="3"></circle>
+            </g>
+          </svg>
+
+          Settings
+        </a>
+      </nav>
+
+      <!-- User Profile -->
+
+      <div class="p-4 border-t border-zinc-100">
+        <button
+          class="flex items-center gap-3 w-full hover:bg-zinc-50 p-2 rounded-md transition-colors text-left group"
+        >
+          <div
+            class="w-8 h-8 rounded-full bg-zinc-200 flex items-center justify-center text-zinc-600"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              aria-hidden="true"
+              role="img"
+              width="16"
+              height="16"
+              viewBox="0 0 24 24"
+              data-icon="lucide:user"
+              data-width="16"
+              class="iconify iconify--lucide"
+            >
+              <g
+                fill="none"
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+              >
+                <path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"></path>
+
+                <circle cx="12" cy="7" r="4"></circle>
+              </g>
+            </svg>
+          </div>
+
+          <div class="flex-1 min-w-0">
+            <p
+              class="group-hover:text-zinc-950 truncate text-sm font-medium text-zinc-900"
+            >
+              Hey, OM
+            </p>
+
+            <p class="text-xs text-zinc-500 truncate">Administrator</p>
+          </div>
+
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            aria-hidden="true"
+            role="img"
+            width="14"
+            height="14"
+            viewBox="0 0 24 24"
+            data-icon="lucide:chevrons-up-down"
+            data-width="14"
+            class="iconify text-zinc-400 iconify--lucide"
+          >
+            <path
+              fill="none"
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="m7 15l5 5l5-5M7 9l5-5l5 5"
+            ></path>
+          </svg>
+        </button>
+      </div>
+    </aside>
+
+    <!-- Main Content -->
+
+    <main class="flex-1 flex flex-col min-w-0 overflow-hidden bg-white/30">
+      <!-- Header -->
+
+      <header
+        class="h-16 flex items-center justify-between px-6 border-b border-zinc-200 bg-white/60 backdrop-blur-md sticky top-0 z-10"
+      >
+        <!-- Mobile Menu Button -->
+
+        <button class="md:hidden p-2 -ml-2 text-zinc-500">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            aria-hidden="true"
+            role="img"
+            width="20"
+            height="20"
+            viewBox="0 0 24 24"
+            data-icon="lucide:menu"
+            data-width="20"
+            class="iconify iconify--lucide"
+          >
+            <path
+              fill="none"
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M4 5h16M4 12h16M4 19h16"
+            ></path>
+          </svg>
+        </button>
+
+        <!-- Breadcrumbs / Title -->
+
+        <div class="hidden md:flex items-center gap-2 text-sm">
+          <span class="text-zinc-500">Overview</span>
+
+          <span class="text-zinc-300">/</span>
+
+          <span class="font-medium text-zinc-900">Dashboard</span>
+        </div>
+
+        <!-- Right Actions -->
+
+        <div class="flex items-center gap-4">
+          <!-- Search -->
+
+          <div class="relative hidden sm:block group">
+            <!-- svg : Scalable vector Graphics -->
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              aria-hidden="true"
+              role="img"
+              width="16"
+              height="16"
+              viewBox="0 0 24 24"
+              data-icon="lucide:search"
+              data-width="16"
+              class="iconify absolute left-2.5 top-1/2 -translate-y-1/2 text-zinc-400 group-hover:text-zinc-600 transition-colors iconify--lucide"
+            >
+              <!-- <g> for group in svg -->
+              <g
+                fill="none"
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                class=""
+              >
+                <path d="m21 21l-4.34-4.34"></path>
+
+                <circle cx="11" cy="11" r="8" class=""></circle>
+              </g>
+            </svg>
+
+            <!-- search input -->
+            <input
+              type="text"
+              id="searchInput"
+              placeholder="Search students, courses..."
+              class="h-9 w-64 pl-9 pr-4 bg-white/50 border border-zinc-200 rounded-md text-sm text-zinc-900 placeholder-zinc-400 focus:outline-none focus:ring-1 focus:ring-zinc-300 focus:border-zinc-300 transition-all focus:bg-white"
+            />
+
+            <div
+              class="absolute right-2 top-1/2 -translate-y-1/2 flex gap-1"
+            ></div>
+          </div>
+
+          <!-- Notifications -->
+
+          <button
+            class="relative p-2 text-zinc-400 hover:text-zinc-900 hover:bg-zinc-100/50 rounded-md transition-colors"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              aria-hidden="true"
+              role="img"
+              width="20"
+              height="20"
+              viewBox="0 0 24 24"
+              data-icon="lucide:bell"
+              data-width="20"
+              class="iconify iconify--lucide"
+            >
+              <path
+                fill="none"
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M10.268 21a2 2 0 0 0 3.464 0m-10.47-5.674A1 1 0 0 0 4 17h16a1 1 0 0 0 .74-1.673C19.41 13.956 18 12.499 18 8A6 6 0 0 0 6 8c0 4.499-1.411 5.956-2.738 7.326"
+              ></path>
+            </svg>
+
+            <span
+              class="absolute top-2 right-2 w-2 h-2 bg-red-500 rounded-full border-2 border-white"
+            ></span>
+          </button>
+        </div>
+      </header>
+
+      <!-- Scrollable Content -->
+
+      <div class="flex-1 overflow-y-auto lg:p-10 pt-6 pr-6 pb-6 pl-6">
+        <div class="max-w-6xl mx-auto space-y-8">
+          <!-- Page Title + Action -->
+
+          <div
+            class="flex flex-col sm:flex-row sm:items-center justify-between gap-4"
+          >
+            <div class="">
+              <h1 class="text-2xl font-semibold text-zinc-900 tracking-tight">
+                Welcome back, OM
+              </h1>
+
+              <p class="text-zinc-500 text-sm mt-1">
+                Here's what's happening at the campus today.
+              </p>
+            </div>
+
+            <div class="flex items-center gap-2">
+              <button
+                class="hover:bg-zinc-50 transition-all text-sm font-medium text-zinc-900 bg-white h-9 border-zinc-200 border rounded-md pr-4 pl-4 shadow-sm gap-x-2 gap-y-2"
+              >
+                Export Report
+              </button>
+
+              <a
+                href="add-student.html"
+                class="hover:bg-zinc-800 shadow-zinc-900/10 flex gap-2 transition-all text-sm font-medium text-white bg-zinc-900 h-9 rounded-md px-4 shadow-lg items-center"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  aria-hidden="true"
+                  role="img"
+                  width="16"
+                  height="16"
+                  viewBox="0 0 24 24"
+                  data-icon="lucide:plus"
+                  data-width="16"
+                  class="iconify iconify--lucide"
+                >
+                  <path
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M5 12h14m-7-7v14"
+                  ></path>
+                </svg>
+                Add Student
+              </a>
+            </div>
+          </div>
+
+          <!-- Stats Grid -->
+
+          <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+            <!-- Stat 1 -->
+
+            <div
+              class="bg-white/80 backdrop-blur-sm p-4 rounded-xl border border-zinc-200/60 shadow-[0_2px_12px_-4px_rgba(0,0,0,0.02)] hover:border-zinc-300 transition-colors group"
+            >
+              <div class="flex items-center justify-between mb-4">
+                <div
+                  class="p-2 bg-blue-50 text-blue-600 rounded-lg group-hover:bg-blue-100 transition-colors"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    aria-hidden="true"
+                    role="img"
+                    width="20"
+                    height="20"
+                    viewBox="0 0 24 24"
+                    data-icon="lucide:users"
+                    data-width="20"
+                    class="iconify iconify--lucide"
+                  >
+                    <g
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                    >
+                      <path
+                        d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2M16 3.128a4 4 0 0 1 0 7.744M22 21v-2a4 4 0 0 0-3-3.87"
+                      ></path>
+
+                      <circle cx="9" cy="7" r="4"></circle>
+                    </g>
+                  </svg>
+                </div>
+
+                <span
+                  class="flex items-center gap-1 text-xs font-medium text-emerald-600 bg-emerald-50 px-2 py-0.5 rounded-full border border-emerald-100"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    aria-hidden="true"
+                    role="img"
+                    width="12"
+                    height="12"
+                    viewBox="0 0 24 24"
+                    data-icon="lucide:trending-up"
+                    data-width="12"
+                    class="iconify iconify--lucide"
+                  >
+                    <g
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                    >
+                      <path d="M16 7h6v6"></path>
+
+                      <path d="m22 7l-8.5 8.5l-5-5L2 17"></path>
+                    </g>
+                  </svg>
+
+                  12%
+                </span>
+              </div>
+
+              <div class="space-y-1">
+                <p
+                  class="text-xs font-medium text-zinc-500 uppercase tracking-wide"
+                >
+                  Total Students
+                </p>
+
+                <h3 class="text-2xl font-semibold tracking-tight text-zinc-900">
+                  12,450
+                </h3>
+              </div>
+            </div>
+
+            <!-- Stat 2 -->
+
+            <div
+              class="bg-white/80 backdrop-blur-sm p-4 rounded-xl border border-zinc-200/60 shadow-[0_2px_12px_-4px_rgba(0,0,0,0.02)] hover:border-zinc-300 transition-colors group"
+            >
+              <div class="flex items-center justify-between mb-4">
+                <div
+                  class="p-2 bg-purple-50 text-purple-600 rounded-lg group-hover:bg-purple-100 transition-colors"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    aria-hidden="true"
+                    role="img"
+                    width="20"
+                    height="20"
+                    viewBox="0 0 24 24"
+                    data-icon="lucide:graduation-cap"
+                    data-width="20"
+                    class="iconify iconify--lucide"
+                  >
+                    <g
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                    >
+                      <path
+                        d="M21.42 10.922a1 1 0 0 0-.019-1.838L12.83 5.18a2 2 0 0 0-1.66 0L2.6 9.08a1 1 0 0 0 0 1.832l8.57 3.908a2 2 0 0 0 1.66 0zM22 10v6"
+                      ></path>
+
+                      <path d="M6 12.5V16a6 3 0 0 0 12 0v-3.5"></path>
+                    </g>
+                  </svg>
+                </div>
+
+                <span
+                  class="flex items-center gap-1 text-xs font-medium text-emerald-600 bg-emerald-50 px-2 py-0.5 rounded-full border border-emerald-100"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    aria-hidden="true"
+                    role="img"
+                    width="12"
+                    height="12"
+                    viewBox="0 0 24 24"
+                    data-icon="lucide:trending-up"
+                    data-width="12"
+                    class="iconify iconify--lucide"
+                  >
+                    <g
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      class=""
+                    >
+                      <path d="M16 7h6v6" class=""></path>
+
+                      <path d="m22 7l-8.5 8.5l-5-5L2 17" class=""></path>
+                    </g>
+                  </svg>
+
+                  4%
+                </span>
+              </div>
+
+              <div class="space-y-1">
+                <p
+                  class="text-xs font-medium text-zinc-500 uppercase tracking-wide"
+                >
+                  Active Courses
+                </p>
+
+                <h3 class="text-2xl font-semibold tracking-tight text-zinc-900">
+                  384
+                </h3>
+              </div>
+            </div>
+
+            <!-- Stat 3 -->
+
+            <div
+              class="bg-white/80 backdrop-blur-sm p-4 rounded-xl border border-zinc-200/60 shadow-[0_2px_12px_-4px_rgba(0,0,0,0.02)] hover:border-zinc-300 transition-colors group"
+            >
+              <div class="flex items-center justify-between mb-4">
+                <div
+                  class="p-2 bg-amber-50 text-amber-600 rounded-lg group-hover:bg-amber-100 transition-colors"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    aria-hidden="true"
+                    role="img"
+                    width="20"
+                    height="20"
+                    viewBox="0 0 24 24"
+                    data-icon="lucide:wallet"
+                    data-width="20"
+                    class="iconify iconify--lucide"
+                  >
+                    <g
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                    >
+                      <path
+                        d="M19 7V4a1 1 0 0 0-1-1H5a2 2 0 0 0 0 4h15a1 1 0 0 1 1 1v4h-3a2 2 0 0 0 0 4h3a1 1 0 0 0 1-1v-2a1 1 0 0 0-1-1"
+                      ></path>
+
+                      <path
+                        d="M3 5v14a2 2 0 0 0 2 2h15a1 1 0 0 0 1-1v-4"
+                      ></path>
+                    </g>
+                  </svg>
+                </div>
+
+                <span
+                  class="flex items-center gap-1 text-xs font-medium text-red-600 bg-red-50 px-2 py-0.5 rounded-full border border-red-100"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    aria-hidden="true"
+                    role="img"
+                    width="12"
+                    height="12"
+                    viewBox="0 0 24 24"
+                    data-icon="lucide:trending-down"
+                    data-width="12"
+                    class="iconify iconify--lucide"
+                  >
+                    <g
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                    >
+                      <path d="M16 17h6v-6"></path>
+
+                      <path d="m22 17l-8.5-8.5l-5 5L2 7"></path>
+                    </g>
+                  </svg>
+
+                  1.2%
+                </span>
+              </div>
+
+              <div class="space-y-1">
+                <p
+                  class="text-xs font-medium text-zinc-500 uppercase tracking-wide"
+                >
+                  Fee Collection
+                </p>
+
+                <h3 class="text-2xl font-semibold tracking-tight text-zinc-900">
+                  $2.4M
+                </h3>
+              </div>
+            </div>
+
+            <!-- Stat 4 -->
+
+            <div
+              class="bg-white/80 backdrop-blur-sm p-4 rounded-xl border border-zinc-200/60 shadow-[0_2px_12px_-4px_rgba(0,0,0,0.02)] hover:border-zinc-300 transition-colors group"
+            >
+              <div class="flex items-center justify-between mb-4">
+                <div
+                  class="p-2 bg-rose-50 text-rose-600 rounded-lg group-hover:bg-rose-100 transition-colors"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    aria-hidden="true"
+                    role="img"
+                    width="20"
+                    height="20"
+                    viewBox="0 0 24 24"
+                    data-icon="lucide:briefcase"
+                    data-width="20"
+                    class="iconify iconify--lucide"
+                  >
+                    <g
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                    >
+                      <path
+                        d="M16 20V4a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"
+                      ></path>
+
+                      <rect width="20" height="14" x="2" y="6" rx="2"></rect>
+                    </g>
+                  </svg>
+                </div>
+
+                <span
+                  class="flex items-center gap-1 text-xs font-medium text-zinc-500 bg-zinc-100 px-2 py-0.5 rounded-full border border-zinc-200"
+                >
+                  0%
+                </span>
+              </div>
+
+              <div class="space-y-1">
+                <p
+                  class="text-xs font-medium text-zinc-500 uppercase tracking-wide"
+                >
+                  Faculty Staff
+                </p>
+
+                <h3 class="text-2xl font-semibold tracking-tight text-zinc-900">
+                  845
+                </h3>
+              </div>
+            </div>
+          </div>
+
+          <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+            <!-- Left Column: Recent Enrollments Table -->
+
+            <div class="lg:col-span-2 space-y-4">
+              <div class="flex items-center justify-between">
+                <h2 class="text-base font-semibold text-zinc-900">
+                  Recent Enrollments
+                </h2>
+
+                <a
+                  href="#"
+                  class="text-xs font-medium text-zinc-500 hover:text-zinc-900 flex items-center gap-1"
+                >
+                  View all
+
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    aria-hidden="true"
+                    role="img"
+                    width="12"
+                    height="12"
+                    viewBox="0 0 24 24"
+                    data-icon="lucide:arrow-right"
+                    data-width="12"
+                    class="iconify iconify--lucide"
+                  >
+                    <path
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M5 12h14m-7-7l7 7l-7 7"
+                    ></path>
+                  </svg>
+                </a>
+              </div>
+
+              <div
+                class="bg-white/80 backdrop-blur-sm border border-zinc-200 rounded-xl shadow-sm overflow-hidden"
+              >
+                <div class="overflow-x-auto">
+                  <table class="w-full text-left text-sm">
+                    <thead class="bg-zinc-50/50 border-b border-zinc-100">
+                      <tr class="">
+                        <th
+                          class="px-6 py-3 font-medium text-zinc-500 text-xs uppercase tracking-wider"
+                        >
+                          Student
+                        </th>
+
+                        <th
+                          class="px-6 py-3 font-medium text-zinc-500 text-xs uppercase tracking-wider"
+                        >
+                          ID
+                        </th>
+
+                        <th
+                          class="px-6 py-3 font-medium text-zinc-500 text-xs uppercase tracking-wider"
+                        >
+                          Department
+                        </th>
+
+                        <th
+                          class="px-6 py-3 font-medium text-zinc-500 text-xs uppercase tracking-wider"
+                        >
+                          Status
+                        </th>
+
+                        <th
+                          class="px-6 py-3 font-medium text-zinc-500 text-xs uppercase tracking-wider text-right"
+                        >
+                          Action
+                        </th>
+                      </tr>
+                    </thead>
+
+                    <tbody class="divide-y divide-zinc-100">
+                      <tr class="hover:bg-zinc-50/80 transition-colors">
+                        <td class="px-6 py-3.5">
+                          <div class="flex items-center gap-3">
+                            <div
+                              class="w-8 h-8 rounded-full bg-gradient-to-tr from-blue-100 to-indigo-100 flex items-center justify-center text-blue-700 text-xs font-medium border border-blue-200"
+                            >
+                              JD
+                            </div>
+
+                            <div class="">
+                              <p class="font-medium text-zinc-900">John</p>
+
+                              <p class="text-xs text-zinc-500">Class of 2026</p>
+                            </div>
+                          </div>
+                        </td>
+
+                        <td class="px-6 py-3.5 text-zinc-500 font-mono text-xs">
+                          #ST-2024-001
+                        </td>
+
+                        <td class="px-6 py-3.5 text-zinc-600">
+                          Computer Science
+                        </td>
+
+                        <td class="px-6 py-3.5">
+                          <span
+                            class="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full text-xs font-medium bg-emerald-50 text-emerald-700 border border-emerald-100"
+                          >
+                            <span
+                              class="w-1.5 h-1.5 rounded-full bg-emerald-500"
+                            ></span>
+
+                            Admitted
+                          </span>
+                        </td>
+
+                        <td class="px-6 py-3.5 text-right">
+                          <button
+                            class="text-zinc-400 hover:text-zinc-900 transition-colors"
+                          >
+                            <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              aria-hidden="true"
+                              role="img"
+                              width="16"
+                              height="16"
+                              viewBox="0 0 24 24"
+                              data-icon="lucide:more-horizontal"
+                              data-width="16"
+                              class="iconify iconify--lucide"
+                            >
+                              <g
+                                fill="none"
+                                stroke="currentColor"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                                stroke-width="2"
+                              >
+                                <circle cx="12" cy="12" r="1"></circle>
+
+                                <circle cx="19" cy="12" r="1"></circle>
+
+                                <circle cx="5" cy="12" r="1"></circle>
+                              </g>
+                            </svg>
+                          </button>
+                        </td>
+                      </tr>
+
+                      <tr class="hover:bg-zinc-50/80 transition-colors">
+                        <td class="px-6 py-3.5">
+                          <div class="flex items-center gap-3">
+                            <div
+                              class="w-8 h-8 rounded-full bg-gradient-to-tr from-amber-100 to-orange-100 flex items-center justify-center text-amber-700 text-xs font-medium border border-amber-200"
+                            >
+                              AS
+                            </div>
+
+                            <div class="">
+                              <p class="font-medium text-zinc-900">Arush</p>
+
+                              <p class="text-xs text-zinc-500">Class of 2025</p>
+                            </div>
+                          </div>
+                        </td>
+
+                        <td class="px-6 py-3.5 text-zinc-500 font-mono text-xs">
+                          #ST-2024-042
+                        </td>
+
+                        <td class="px-6 py-3.5 text-zinc-600">Architecture</td>
+
+                        <td class="px-6 py-3.5">
+                          <span
+                            class="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full text-xs font-medium bg-amber-50 text-amber-700 border border-amber-100"
+                          >
+                            <span
+                              class="w-1.5 h-1.5 rounded-full bg-amber-500"
+                            ></span>
+
+                            Pending
+                          </span>
+                        </td>
+
+                        <td class="px-6 py-3.5 text-right">
+                          <button
+                            class="text-zinc-400 hover:text-zinc-900 transition-colors"
+                          >
+                            <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              aria-hidden="true"
+                              role="img"
+                              width="16"
+                              height="16"
+                              viewBox="0 0 24 24"
+                              data-icon="lucide:more-horizontal"
+                              data-width="16"
+                              class="iconify iconify--lucide"
+                            >
+                              <g
+                                fill="none"
+                                stroke="currentColor"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                                stroke-width="2"
+                              >
+                                <circle cx="12" cy="12" r="1"></circle>
+
+                                <circle cx="19" cy="12" r="1"></circle>
+
+                                <circle cx="5" cy="12" r="1"></circle>
+                              </g>
+                            </svg>
+                          </button>
+                        </td>
+                      </tr>
+
+                      <tr class="hover:bg-zinc-50/80 transition-colors">
+                        <td class="px-6 py-3.5">
+                          <div class="flex items-center gap-3">
+                            <div
+                              class="w-8 h-8 rounded-full bg-gradient-to-tr from-rose-100 to-pink-100 flex items-center justify-center text-rose-700 text-xs font-medium border border-rose-200"
+                            >
+                              MK
+                            </div>
+
+                            <div class="">
+                              <p class="font-medium text-zinc-900">Michael</p>
+
+                              <p class="text-xs text-zinc-500">Class of 2026</p>
+                            </div>
+                          </div>
+                        </td>
+
+                        <td class="px-6 py-3.5 text-zinc-500 font-mono text-xs">
+                          #ST-2024-089
+                        </td>
+
+                        <td class="px-6 py-3.5 text-zinc-600">Engineering</td>
+
+                        <td class="px-6 py-3.5">
+                          <span
+                            class="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full text-xs font-medium bg-emerald-50 text-emerald-700 border border-emerald-100"
+                          >
+                            <span
+                              class="w-1.5 h-1.5 rounded-full bg-emerald-500"
+                            ></span>
+
+                            Admitted
+                          </span>
+                        </td>
+
+                        <td class="px-6 py-3.5 text-right">
+                          <button
+                            class="text-zinc-400 hover:text-zinc-900 transition-colors"
+                          >
+                            <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              aria-hidden="true"
+                              role="img"
+                              width="16"
+                              height="16"
+                              viewBox="0 0 24 24"
+                              data-icon="lucide:more-horizontal"
+                              data-width="16"
+                              class="iconify iconify--lucide"
+                            >
+                              <g
+                                fill="none"
+                                stroke="currentColor"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                                stroke-width="2"
+                              >
+                                <circle cx="12" cy="12" r="1"></circle>
+
+                                <circle cx="19" cy="12" r="1"></circle>
+
+                                <circle cx="5" cy="12" r="1"></circle>
+                              </g>
+                            </svg>
+                          </button>
+                        </td>
+                      </tr>
+
+                      <tr class="hover:bg-zinc-50/80 transition-colors">
+                        <td class="px-6 py-3.5">
+                          <div class="flex items-center gap-3">
+                            <div
+                              class="w-8 h-8 rounded-full bg-gradient-to-tr from-cyan-100 to-blue-100 flex items-center justify-center text-cyan-700 text-xs font-medium border border-cyan-200"
+                            >
+                              EL
+                            </div>
+
+                            <div class="">
+                              <p class="font-medium text-zinc-900">Rohan</p>
+
+                              <p class="text-xs text-zinc-500">Class of 2024</p>
+                            </div>
+                          </div>
+                        </td>
+
+                        <td class="px-6 py-3.5 text-zinc-500 font-mono text-xs">
+                          #ST-2024-112
+                        </td>
+
+                        <td class="px-6 py-3.5 text-zinc-600">Business</td>
+
+                        <td class="px-6 py-3.5">
+                          <span
+                            class="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full text-xs font-medium bg-zinc-100 text-zinc-600 border border-zinc-200"
+                          >
+                            <span
+                              class="w-1.5 h-1.5 rounded-full bg-zinc-400"
+                            ></span>
+
+                            Waitlist
+                          </span>
+                        </td>
+
+                        <td class="px-6 py-3.5 text-right">
+                          <button
+                            class="text-zinc-400 hover:text-zinc-900 transition-colors"
+                          >
+                            <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              aria-hidden="true"
+                              role="img"
+                              width="16"
+                              height="16"
+                              viewBox="0 0 24 24"
+                              data-icon="lucide:more-horizontal"
+                              data-width="16"
+                              class="iconify iconify--lucide"
+                            >
+                              <g
+                                fill="none"
+                                stroke="currentColor"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                                stroke-width="2"
+                              >
+                                <circle cx="12" cy="12" r="1"></circle>
+
+                                <circle cx="19" cy="12" r="1"></circle>
+
+                                <circle cx="5" cy="12" r="1"></circle>
+                              </g>
+                            </svg>
+                          </button>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+
+            <!-- Right Column: Upcoming Schedule -->
+
+            <div class="space-y-4">
+              <div class="flex items-center justify-between">
+                <h2 class="text-base font-semibold text-zinc-900">
+                  Today's Schedule
+                </h2>
+
+                <button class="text-zinc-400 hover:text-zinc-900">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    aria-hidden="true"
+                    role="img"
+                    width="16"
+                    height="16"
+                    viewBox="0 0 24 24"
+                    data-icon="lucide:calendar"
+                    data-width="16"
+                    class="iconify iconify--lucide"
+                  >
+                    <g
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                    >
+                      <path d="M8 2v4m8-4v4"></path>
+
+                      <rect width="18" height="18" x="3" y="4" rx="2"></rect>
+
+                      <path d="M3 10h18"></path>
+                    </g>
+                  </svg>
+                </button>
+              </div>
+
+              <div
+                class="bg-white/80 backdrop-blur-sm border border-zinc-200 rounded-xl shadow-sm p-4 space-y-5"
+              >
+                <!-- Timeline Item 1 -->
+
+                <div class="flex gap-4 relative">
+                  <div class="flex flex-col items-center">
+                    <span
+                      class="text-xs font-medium text-zinc-500 w-8 text-center"
+                      >09:00</span
+                    >
+
+                    <div class="h-full w-px bg-zinc-100 my-1"></div>
+                  </div>
+
+                  <div
+                    class="flex-1 pb-4 border-b border-dashed border-zinc-100 last:border-0 last:pb-0"
+                  >
+                    <div
+                      class="bg-blue-50/50 border border-blue-100 p-3 rounded-lg hover:bg-blue-50 transition-colors cursor-pointer group"
+                    >
+                      <div class="flex justify-between items-start mb-1">
+                        <h4
+                          class="text-sm font-semibold text-zinc-900 group-hover:text-blue-700"
+                        >
+                          Data Structures
+                        </h4>
+
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          aria-hidden="true"
+                          role="img"
+                          width="14"
+                          height="14"
+                          viewBox="0 0 24 24"
+                          data-icon="lucide:code-2"
+                          data-width="14"
+                          class="iconify text-blue-400 iconify--lucide"
+                        >
+                          <path
+                            fill="none"
+                            stroke="currentColor"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            stroke-width="2"
+                            d="m18 16l4-4l-4-4M6 8l-4 4l4 4m8.5-12l-5 16"
+                          ></path>
+                        </svg>
+                      </div>
+
+                      <p class="text-xs text-zinc-500 mb-2">CS-101 • Hall A</p>
+
+                      <div class="flex items-center gap-2">
+                        <div class="flex -space-x-1.5">
+                          <img
+                            class="w-5 h-5 rounded-full border border-white ring-1 ring-zinc-100"
+                            src="https://ui-avatars.com/api/?name=Prof+A&amp;background=random"
+                            alt=""
+                          />
+
+                          <img
+                            class="w-5 h-5 rounded-full border border-white ring-1 ring-zinc-100"
+                            src="https://ui-avatars.com/api/?name=St+B&amp;background=random"
+                            alt=""
+                          />
+
+                          <div
+                            class="w-5 h-5 rounded-full border border-white bg-zinc-100 flex items-center justify-center text-[8px] font-medium text-zinc-500 ring-1 ring-zinc-100"
+                          >
+                            +24
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Timeline Item 2 -->
+
+                <div class="flex gap-4 relative">
+                  <div class="flex flex-col items-center">
+                    <span
+                      class="text-xs font-medium text-zinc-500 w-8 text-center"
+                      >11:30</span
+                    >
+
+                    <div class="h-full w-px bg-zinc-100 my-1"></div>
+                  </div>
+
+                  <div
+                    class="flex-1 pb-4 border-b border-dashed border-zinc-100 last:border-0 last:pb-0"
+                  >
+                    <div
+                      class="bg-white border border-zinc-200 p-3 rounded-lg hover:border-zinc-300 transition-colors cursor-pointer"
+                    >
+                      <div class="flex justify-between items-start mb-1">
+                        <h4 class="text-sm font-semibold text-zinc-900">
+                          Faculty Meeting
+                        </h4>
+
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          aria-hidden="true"
+                          role="img"
+                          width="14"
+                          height="14"
+                          viewBox="0 0 24 24"
+                          data-icon="lucide:users-2"
+                          data-width="14"
+                          class="iconify text-zinc-400 iconify--lucide"
+                        >
+                          <g
+                            fill="none"
+                            stroke="currentColor"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            stroke-width="2"
+                          >
+                            <path d="M18 21a8 8 0 0 0-16 0"></path>
+
+                            <circle cx="10" cy="8" r="5"></circle>
+
+                            <path
+                              d="M22 20c0-3.37-2-6.5-4-8a5 5 0 0 0-.45-8.3"
+                            ></path>
+                          </g>
+                        </svg>
+                      </div>
+
+                      <p class="text-xs text-zinc-500">Conference Room 2</p>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Timeline Item 3 -->
+
+                <div class="flex gap-4 relative">
+                  <div class="flex flex-col items-center">
+                    <span
+                      class="text-xs font-medium text-zinc-500 w-8 text-center"
+                      >14:00</span
+                    >
+                  </div>
+
+                  <div class="flex-1">
+                    <div
+                      class="bg-purple-50/50 border border-purple-100 p-3 rounded-lg hover:bg-purple-50 transition-colors cursor-pointer group"
+                    >
+                      <div class="flex justify-between items-start mb-1">
+                        <h4
+                          class="text-sm font-semibold text-zinc-900 group-hover:text-purple-700"
+                        >
+                          Physics Lab
+                        </h4>
+
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          aria-hidden="true"
+                          role="img"
+                          width="14"
+                          height="14"
+                          viewBox="0 0 24 24"
+                          data-icon="lucide:flask-conical"
+                          data-width="14"
+                          class="iconify text-purple-400 iconify--lucide"
+                        >
+                          <path
+                            fill="none"
+                            stroke="currentColor"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            stroke-width="2"
+                            d="M14 2v6a2 2 0 0 0 .245.96l5.51 10.08A2 2 0 0 1 18 22H6a2 2 0 0 1-1.755-2.96l5.51-10.08A2 2 0 0 0 10 8V2M6.453 15h11.094M8.5 2h7"
+                          ></path>
+                        </svg>
+                      </div>
+
+                      <p class="text-xs text-zinc-500">PHY-202 • Lab 3</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Quick Actions Component -->
+
+              <div
+                class="bg-zinc-900 rounded-xl p-5 text-white shadow-xl shadow-zinc-900/10 relative overflow-hidden group cursor-pointer mt-6"
+              >
+                <div
+                  class="absolute top-0 right-0 p-8 bg-white/10 rounded-full blur-2xl -mr-10 -mt-10 group-hover:bg-white/20 transition-all"
+                ></div>
+
+                <h3 class="font-semibold text-lg relative z-10">
+                  Department Reports
+                </h3>
+
+                <p class="text-zinc-400 text-xs mt-1 mb-4 relative z-10 w-3/4">
+                  Generate monthly academic performance reports instantly.
+                </p>
+
+                <button
+                  class="text-xs font-medium bg-white text-zinc-900 px-3 py-1.5 rounded flex items-center gap-1.5 relative z-10 hover:bg-zinc-100 transition-colors"
+                >
+                  Generate
+
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    aria-hidden="true"
+                    role="img"
+                    width="12"
+                    height="12"
+                    viewBox="0 0 24 24"
+                    data-icon="lucide:arrow-right"
+                    data-width="12"
+                    class="iconify iconify--lucide"
+                  >
+                    <path
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M5 12h14m-7-7l7 7l-7 7"
+                    ></path>
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Footer -->
+
+          <div
+            class="flex items-center justify-between pt-8 pb-4 border-t border-zinc-200"
+          >
+            <p class="text-xs text-zinc-400">© 2024 Academia System Inc.</p>
+
+            <div class="flex gap-4 text-xs text-zinc-500">
+              <a href="#" class="hover:text-zinc-900">Privacy</a>
+
+              <a href="#" class="hover:text-zinc-900">Help</a>
+
+              <a href="#" class="hover:text-zinc-900">Status</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <script>
+      const searchInput = document.getElementById("searchInput");
+      const tableRows = document.querySelectorAll("#searchTable tr");
+
+      searchInput.addEventListener("keyup", () => {
+        const searchValue = searchInput.value.toLowerCase();
+
+        tableRows.forEach((row) => {
+          const rowText = row.innerText.toLowerCase();
+
+          if (rowText.includes(searchValue)) {
+            row.style.display = "";
+          } else {
+            row.style.display = "none";
+          }
+        });
+      });
+    </script>
+  </body>
+</html>
