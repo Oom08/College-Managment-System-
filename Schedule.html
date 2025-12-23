@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Schedule - Academia</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://code.iconify.design/3/3.1.0/iconify.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet"/>
+  </head>
+
+  <body class="text-zinc-900 antialiased selection:bg-zinc-900 selection:text-white flex h-screen overflow-hidden relative">
+    <div class="fixed inset-0 -z-10 h-full w-full bg-zinc-50">
+      <div class="absolute h-full w-full bg-[radial-gradient(#e5e7eb_1px,transparent_1px)] [background-size:16px_16px] [mask-image:radial-gradient(ellipse_50%_50%_at_50%_50%,#000_70%,transparent_100%)]"></div>
+      <div class="absolute top-[-10%] left-[-10%] h-[500px] w-[500px] rounded-full bg-blue-400/10 blur-[100px]"></div>
+      <div class="absolute bottom-[-10%] right-[-10%] h-[500px] w-[500px] rounded-full bg-purple-400/10 blur-[100px]"></div>
+    </div>
+
+    <!-- Sidebar (Same as other pages) -->
+    <aside class="w-64 bg-white/80 backdrop-blur-xl border-r border-zinc-200 hidden md:flex flex-col flex-shrink-0 z-20">
+      <div class="h-16 flex items-center px-6 border-b border-zinc-100">
+        <div class="flex items-center gap-2 text-zinc-900">
+          <div class="w-8 h-8 bg-zinc-900 text-white rounded-lg flex items-center justify-center shadow-lg shadow-zinc-900/20">
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path d="M21.42 10.922a1 1 0 0 0-.019-1.838L12.83 5.18a2 2 0 0 0-1.66 0L2.6 9.08a1 1 0 0 0 0 1.832l8.57 3.908a2 2 0 0 0 1.66 0zM22 10v6"></path><path d="M6 12.5V16a6 3 0 0 0 12 0v-3.5"></path></g></svg>
+          </div>
+          <span class="text-sm font-semibold tracking-tight">ACADEMIA</span>
+        </div>
+      </div>
+
+      <nav class="flex-1 overflow-y-auto no-scrollbar pt-4 pr-3 pb-4 pl-3 space-y-1">
+        <div class="px-3 mb-2 text-xs font-medium text-zinc-400 uppercase tracking-wider">Overview</div>
+        <a href="index.html" class="flex items-center gap-3 px-3 py-2 text-sm font-medium rounded-md text-zinc-500 hover:text-zinc-900 hover:bg-zinc-50 transition-all">
+          <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><rect width="7" height="9" x="3" y="3" rx="1"></rect><rect width="7" height="5" x="14" y="3" rx="1"></rect><rect width="7" height="9" x="14" y="12" rx="1"></rect><rect width="7" height="5" x="3" y="16" rx="1"></rect></g></svg>
+          Dashboard
+        </a>
+        <a href="student.html" class="flex items-center gap-3 hover:text-zinc-900 hover:bg-zinc-50 transition-all text-sm font-medium text-zinc-500 rounded-md pt-2 pr-3 pb-2 pl-3">
+          <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2M16 3.128a4 4 0 0 1 0 7.744M22 21v-2a4 4 0 0 0-3-3.87"></path><circle cx="9" cy="7" r="4"></circle></g></svg>
+          Students
+        </a>
+        <a href="faculty.html" class="flex items-center gap-3 hover:text-zinc-900 hover:bg-zinc-50 transition-all text-sm font-medium text-zinc-500 rounded-md pt-2 pr-3 pb-2 pl-3">
+          <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path d="M16 20V4a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path><rect width="20" height="14" x="2" y="6" rx="2"></rect></g></svg>
+          Faculty
+        </a>
+        <a href="courses.html" class="flex items-center gap-3 px-3 py-2 text-sm font-medium rounded-md text-zinc-500 hover:text-zinc-900 hover:bg-zinc-50 transition-all">
+          <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 7v14m-9-3a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h5a4 4 0 0 1 4 4a4 4 0 0 1 4-4h5a1 1 0 0 1 1 1v13a1 1 0 0 1-1 1h-6a3 3 0 0 0-3 3a3 3 0 0 0-3-3z"></path></svg>
+          Courses
+        </a>
+
+        <div class="px-3 mt-6 mb-2 text-xs font-medium text-zinc-400 uppercase tracking-wider">Management</div>
+        <a href="schedule.html" class="flex items-center gap-3 px-3 py-2 text-sm font-medium rounded-md bg-zinc-50 text-zinc-900 border border-zinc-200/60 shadow-sm">
+          <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path d="M8 2v4m8-4v4"></path><rect width="18" height="18" x="3" y="4" rx="2"></rect><path d="M3 10h18M8 14h.01M12 14h.01M16 14h.01M8 18h.01M12 18h.01M16 18h.01"></path></g></svg>
+          Schedule
+        </a>
+        <a href="exams-grades.html" class="flex items-center gap-3 px-3 py-2 text-sm font-medium rounded-md text-zinc-500 hover:text-zinc-900 hover:bg-zinc-50 transition-all">
+          <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path d="M6 22a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h8a2.4 2.4 0 0 1 1.704.706l3.588 3.588A2.4 2.4 0 0 1 20 8v12a2 2 0 0 1-2 2z"></path><path d="M14 2v5a1 1 0 0 0 1 1h5M10 9H8m8 4H8m8 4H8"></path></g></svg>
+          Exams &amp; Grades
+        </a>
+        <a href="finance.html" class="flex items-center gap-3 px-3 py-2 text-sm font-medium rounded-md text-zinc-500 hover:text-zinc-900 hover:bg-zinc-50 transition-all">
+          <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path d="M19 7V4a1 1 0 0 0-1-1H5a2 2 0 0 0 0 4h15a1 1 0 0 1 1 1v4h-3a2 2 0 0 0 0 4h3a1 1 0 0 0 1-1v-2a1 1 0 0 0-1-1"></path><path d="M3 5v14a2 2 0 0 0 2 2h15a1 1 0 0 0 1-1v-4"></path></g></svg>
+          Finance
+        </a>
+
+        <div class="px-3 mt-6 mb-2 text-xs font-medium text-zinc-400 uppercase tracking-wider">System</div>
+        <a href="#" class="flex items-center gap-3 hover:text-zinc-900 hover:bg-zinc-50 transition-all text-sm font-medium text-zinc-500 rounded-md pt-2 pr-3 pb-2 pl-3">
+          <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 3v18h18m-3-4V9m-5 8V5M8 17v-3"></path></svg>
+          Reports
+        </a>
+        <a href="#" class="flex items-center gap-3 px-3 py-2 text-sm font-medium rounded-md text-zinc-500 hover:text-zinc-900 hover:bg-zinc-50 transition-all">
+          <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path d="M9.671 4.136a2.34 2.34 0 0 1 4.659 0a2.34 2.34 0 0 0 3.319 1.915a2.34 2.34 0 0 1 2.33 4.033a2.34 2.34 0 0 0 0 3.831a2.34 2.34 0 0 1-2.33 4.033a2.34 2.34 0 0 0-3.319 1.915a2.34 2.34 0 0 1-4.659 0a2.34 2.34 0 0 0-3.32-1.915a2.34 2.34 0 0 1-2.33-4.033a2.34 2.34 0 0 0 0-3.831A2.34 2.34 0 0 1 6.35 6.051a2.34 2.34 0 0 0 3.319-1.915"></path><circle cx="12" cy="12" r="3"></circle></g></svg>
+          Settings
+        </a>
+      </nav>
+
+      <div class="p-4 border-t border-zinc-100">
+        <button class="flex items-center gap-3 w-full hover:bg-zinc-50 p-2 rounded-md transition-colors text-left group">
+          <div class="w-8 h-8 rounded-full bg-zinc-200 flex items-center justify-center text-zinc-600">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></g></svg>
+          </div>
+          <div class="flex-1 min-w-0">
+            <p class="group-hover:text-zinc-950 truncate text-sm font-medium text-zinc-900">Hey, OM</p>
+            <p class="text-xs text-zinc-500 truncate">Administrator</p>
+          </div>
+          <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m7 15l5 5l5-5M7 9l5-5l5 5"></path></svg>
+        </button>
+      </div>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="flex-1 flex flex-col min-w-0 overflow-hidden bg-white/30">
+      <header class="h-16 flex items-center justify-between px-6 border-b border-zinc-200 bg-white/60 backdrop-blur-md sticky top-0 z-10">
+        <div class="hidden md:flex items-center gap-2 text-sm">
+          <span class="text-zinc-500">Management</span>
+          <span class="text-zinc-300">/</span>
+          <span class="font-medium text-zinc-900">Schedule</span>
+        </div>
+        <div class="flex items-center gap-4">
+          <button class="relative p-2 text-zinc-400 hover:text-zinc-900 hover:bg-zinc-100/50 rounded-md transition-colors">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10.268 21a2 2 0 0 0 3.464 0m-10.47-5.674A1 1 0 0 0 4 17h16a1 1 0 0 0 .74-1.673C19.41 13.956 18 12.499 18 8A6 6 0 0 0 6 8c0 4.499-1.411 5.956-2.738 7.326"></path></svg>
+            <span class="absolute top-2 right-2 w-2 h-2 bg-red-500 rounded-full border-2 border-white"></span>
+          </button>
+        </div>
+      </header>
+
+      <div class="flex-1 overflow-y-auto lg:p-10 pt-6 pr-6 pb-6 pl-6">
+        <div class="max-w-7xl mx-auto space-y-8">
+          <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-4">
+            <div>
+              <h1 class="text-2xl font-semibold text-zinc-900 tracking-tight">Class Schedule</h1>
+              <p class="text-zinc-500 text-sm mt-1">Weekly timetable and class schedules for all courses.</p>
+            </div>
+            <div class="flex items-center gap-2">
+              <button class="hover:bg-zinc-50 transition-all text-sm font-medium text-zinc-900 bg-white h-9 border-zinc-200 border rounded-md pr-4 pl-4 shadow-sm">Export PDF</button>
+              <button class="hover:bg-zinc-800 shadow-zinc-900/10 flex gap-2 transition-all text-sm font-medium text-white bg-zinc-900 h-9 rounded-md px-4 shadow-lg items-center">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 12h14m-7-7v14"></path></svg>
+                Add Class
+              </button>
+            </div>
+          </div>
+
+          <!-- Weekly Calendar -->
+          <div class="bg-white/80 backdrop-blur-sm border border-zinc-200 rounded-xl shadow-sm overflow-hidden">
+            <div class="p-6 border-b border-zinc-100 flex items-center justify-between">
+              <div class="flex items-center gap-4">
+                <button class="p-2 hover:bg-zinc-100 rounded-lg transition-colors">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m15 18l-6-6l6-6"></path></svg>
+                </button>
+                <div>
+                  <h2 class="text-lg font-semibold text-zinc-900">Week of December 15-21, 2024</h2>
+                  <p class="text-sm text-zinc-500">Fall Semester</p>
+                </div>
+                <button class="p-2 hover:bg-zinc-100 rounded-lg transition-colors">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m9 18l6-6l-6-6"></path></svg>
+                </button>
+              </div>
+              <button class="text-sm font-medium text-zinc-600 hover:text-zinc-900 px-3 py-2 rounded-lg hover:bg-zinc-50 transition-colors">Today</button>
+            </div>
+
+            <!-- Schedule Table -->
+            <div class="overflow-x-auto">
+              <table class="w-full">
+                <thead class="bg-zinc-50/50 border-b border-zinc-100">
+                  <tr>
+                    <th class="px-4 py-3 text-left text-xs font-medium text-zinc-500 uppercase tracking-wider w-24">Time</th>
+                    <th class="px-4 py-3 text-left text-xs font-medium text-zinc-500 uppercase tracking-wider">Monday</th>
+                    <th class="px-4 py-3 text-left text-xs font-medium text-zinc-500 uppercase tracking-wider">Tuesday</th>
+                    <th class="px-4 py-3 text-left text-xs font-medium text-zinc-500 uppercase tracking-wider">Wednesday</th>
+                    <th class="px-4 py-3 text-left text-xs font-medium text-zinc-500 uppercase tracking-wider">Thursday</th>
+                    <th class="px-4 py-3 text-left text-xs font-medium text-zinc-500 uppercase tracking-wider">Friday</th>
+                  </tr>
+                </thead>
+                <tbody class="divide-y divide-zinc-100">
+                  <!-- 9:00 AM -->
+                  <tr>
+                    <td class="px-4 py-3 text-sm font-medium text-zinc-600">09:00</td>
+                    <td class="px-4 py-3">
+                      <div class="bg-blue-50 border-l-4 border-blue-500 p-3 rounded-r hover:bg-blue-100 transition-colors cursor-pointer">
+                        <p class="text-sm font-semibold text-zinc-900">Data Structures</p>
+                        <p class="text-xs text-zinc-600 mt-1">CS-101 • Hall A</p>
+                        <p class="text-xs text-blue-600 mt-1">Dr. Sarah Johnson</p>
+                      </div>
+                    </td>
+                    <td class="px-4 py-3"></td>
+                    <td class="px-4 py-3">
+                      <div class="bg-blue-50 border-l-4 border-blue-500 p-3 rounded-r hover:bg-blue-100 transition-colors cursor-pointer">
+                        <p class="text-sm font-semibold text-zinc-900">Data Structures</p>
+                        <p class="text-xs text-zinc-600 mt-1">CS-101 • Hall A</p>
+                        <p class="text-xs text-blue-600 mt-1">Dr. Sarah Johnson</p>
+                      </div>
+                    </td>
+                    <td class="px-4 py-3"></td>
+                    <td class="px-4 py-3">
+                      <div class="bg-amber-50 border-l-4 border-amber-500 p-3 rounded-r hover:bg-amber-100 transition-colors cursor-pointer">
+                        <p class="text-sm font-semibold text-zinc-900">Marketing</p>
+                        <p class="text-xs text-zinc-600 mt-1">BBA-201 • Hall C</p>
+                        <p class="text-xs text-amber-600 mt-1">Prof. Robert Williams</p>
+                      </div>
+                    </td>
+                  </tr>
+
+                  <!-- 10:30 AM -->
+                  <tr>
+                    <td class="px-4 py-3 text-sm font-medium text-zinc-600">10:30</td>
+                    <td class="px-4 py-3">
+                      <div class="bg-purple-50 border-l-4 border-purple-500 p-3 rounded-r hover:bg-purple-100 transition-colors cursor-pointer">
+                        <p class="text-sm font-semibold text-zinc-900">Calculus</p>
+                        <p class="text-xs text-zinc-600 mt-1">MATH-101 • Hall B</p>
+                        <p class="text-xs text-purple-600 mt-1">Prof. Michael Chen</p>
+                      </div>
+                    </td>
+                    <td class="px-4 py-3">
+                      <div class="bg-emerald-50 border-l-4 border-emerald-500 p-3 rounded-r hover:bg-emerald-100 transition-colors cursor-pointer">
+                        <p class="text-sm font-semibold text-zinc-900">Thermodynamics</p>
+                        <p class="text-xs text-zinc-600 mt-1">PHY-301 • Lab 2</p>
+                        <p class="text-xs text-emerald-600 mt-1">Dr. Priya Sharma</p>
+                      </div>
+                    </td>
+                    <td class="px-4 py-3">
+                      <div class="bg-purple-50 border-l-4 border-purple-500 p-3 rounded-r hover:bg-purple-100 transition-colors cursor-pointer">
+                        <p class="text-sm font-semibold text-zinc-900">Linear Algebra</p>
+                        <p class="text-xs text-zinc-600 mt-1">MATH-102 • Hall B</p>
+                        <p class="text-xs text-purple-600 mt-1">Prof. Michael Chen</p>
+                      </div>
+                    </td>
+                    <td class="px-4 py-3">
+                      <div class="bg-rose-50 border-l-4 border-rose-500 p-3 rounded-r hover:bg-rose-100 transition-colors cursor-pointer">
+                        <p class="text-sm font-semibold text-zinc-900">Robotics Lab</p>
+                        <p class="text-xs text-zinc-600 mt-1">ROB-401 • Lab 5</p>
+                        <p class="text-xs text-rose-600 mt-1">Dr. Anjali Patel</p>
+                      </div>
+                    </td>
+                    <td class="px-4 py-3"></td>
+                  </tr>
+
+                  <!-- 12:00 PM -->
+                  <tr>
+                    <td class="px-4 py-3 text-sm font-medium text-zinc-600">12:00</td>
+                    <td colspan="5" class="px-4 py-3">
+                      <div class="bg-zinc-100 p-3 rounded text-center">
+                        <p class="text-sm font-medium text-zinc-600">Lunch Break</p>
+                      </div>
+                    </td>
+                  </tr>
+
+                  <!-- 2:00 PM -->
+                  <tr>
+                    <td class="px-4 py-3 text-sm font-medium text-zinc-600">14:00</td>
+                    <td class="px-4 py-3"></td>
+                    <td class="px-4 py-3">
+                      <div class="bg-cyan-50 border-l-4 border-cyan-500 p-3 rounded-r hover:bg-cyan-100 transition-colors cursor-pointer">
+                        <p class="text-sm font-semibold text-zinc-900">Fluid Mechanics</p>
+                        <p class="text-xs text-zinc-600 mt-1">ME-302 • Lab 4</p>
+                        <p class="text-xs text-cyan-600 mt-1">Dr. David Lee</p>
+                      </div>
+                    </td>
+                    <td class="px-4 py-3"></td>
+                    <td class="px-4 py-3">
+                      <div class="bg-indigo-50 border-l-4 border-indigo-500 p-3 rounded-r hover:bg-indigo-100 transition-colors cursor-pointer">
+                        <p class="text-sm font-semibold text-zinc-900">Reaction Engineering</p>
+                        <p class="text-xs text-zinc-600 mt-1">CHE-401 • Lab 6</p>
+                        <p class="text-xs text-indigo-600 mt-1">Dr. Emily Garcia</p>
+                      </div>
+                    </td>
+                    <td class="px-4 py-3">
+                      <div class="bg-teal-50 border-l-4 border-teal-500 p-3 rounded-r hover:bg-teal-100 transition-colors cursor-pointer">
+                        <p class="text-sm font-semibold text-zinc-900">Aerospace Design</p>
+                        <p class="text-xs text-zinc-600 mt-1">AER-501 • Hall D</p>
+                        <p class="text-xs text-teal-600 mt-1">Prof. James Martinez</p>
+                      </div>
+                    </td>
+                  </tr>
+
+                  <!-- 3:30 PM -->
+                  <tr>
+                    <td class="px-4 py-3 text-sm font-medium text-zinc-600">15:30</td>
+                    <td class="px-4 py-3">
+                      <div class="bg-pink-50 border-l-4 border-pink-500 p-3 rounded-r hover:bg-pink-100 transition-colors cursor-pointer">
+                        <p class="text-sm font-semibold text-zinc-900">O Level</p>
+                        <p class="text-xs text-zinc-600 mt-1">IT-001 • Lab 1</p>
+                        <p class="text-xs text-pink-600 mt-1">Dr. Lisa Thompson</p>
+                      </div>
+                    </td>
+                    <td class="px-4 py-3">
+                      <div class="bg-violet-50 border-l-4 border-violet-500 p-3 rounded-r hover:bg-violet-100 transition-colors cursor-pointer">
+                        <p class="text-sm font-semibold text-zinc-900">Diploma in CA</p>
+                        <p class="text-xs text-zinc-600 mt-1">DCA-101 • Lab 1</p>
+                        <p class="text-xs text-violet-600 mt-1">Dr. Lisa Thompson</p>
+                      </div>
+                    </td>
+                    <td class="px-4 py-3">
+                      <div class="bg-cyan-50 border-l-4 border-cyan-500 p-3 rounded-r hover:bg-cyan-100 transition-colors cursor-pointer">
+                        <p class="text-sm font-semibold text-zinc-900">Mechatronics</p>
+                        <p class="text-xs text-zinc-600 mt-1">MEC-301 • Lab 5</p>
+                        <p class="text-xs text-cyan-600 mt-1">Dr. Anjali Patel</p>
+                      </div>
+                    </td>
+                    <td class="px-4 py-3"></td>
+                    <td class="px-4 py-3">
+                      <div class="bg-sky-50 border-l-4 border-sky-500 p-3 rounded-r hover:bg-sky-100 transition-colors cursor-pointer">
+                        <p class="text-sm font-semibold text-zinc-900">Automotive Engineering</p>
+                        <p class="text-xs text-zinc-600 mt-1">AUTO-401 • Workshop</p>
+                        <p class="text-xs text-sky-600 mt-1">Dr. David Lee</p>
+                      </div>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+
+          <!-- Upcoming Classes -->
+          <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
+            <div class="bg-white/80 backdrop-blur-sm border border-zinc-200 rounded-xl shadow-sm p-6">
+              <h3 class="font-semibold text-zinc-900 mb-4">Upcoming Classes Today</h3>
+              <div class="space-y-3">
+                <div class="flex items-center gap-4 p-3 bg-zinc-50 rounded-lg">
+                  <div class="flex-shrink-0">
+                    <div class="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center">
+                      <span class="text-blue-700 font-semibold text-sm">14:00</span>
+                    </div>
+                  </div>
+                  <div class="flex-1">
+                    <h4 class="font-medium text-zinc-900">Data Structures Lab</h4>
+                    <p class="text-sm text-zinc-600">CS-101 • Computer Lab 3</p>
+                  </div>
+                  <span class="text-xs px-2 py-1 bg-blue-100 text-blue-700 rounded-full">In 2 hours</span>
+                </div>
+                <div class="flex items-center gap-4 p-3 bg-zinc-50 rounded-lg">
+                  <div class="flex-shrink-0">
+                    <div class="w-12 h-12 bg-purple-100 rounded-lg flex items-center justify-center">
+                      <span class="text-purple-700 font-semibold text-sm">15:30</span>
+                    </div>
+                  </div>
+                  <div class="flex-1">
+                    <h4 class="font-medium text-zinc-900">Physics Lab</h4>
+                    <p class="text-sm text-zinc-600">PHY-202 • Lab 3</p>
+                  </div>
+                  <span class="text-xs px-2 py-1 bg-purple-100 text-purple-700 rounded-full">In 3.5 hours</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="bg-white/80 backdrop-blur-sm border border-zinc-200 rounded-xl shadow-sm p-6">
+              <h3 class="font-semibold text-zinc-900 mb-4">Room Availability</h3>
+              <div class="space-y-3">
+                <div class="flex items-center justify-between p-3 bg-emerald-50 rounded-lg border border-emerald-100">
+                  <div>
+                    <h4 class="font-medium text-zinc-900">Hall A</h4>
+                    <p class="text-sm text-zinc-600">Capacity: 50 students</p>
+                  </div>
+                  <span class="text-xs px-3 py-1 bg-emerald-600 text-white rounded-full">Available</span>
+                </div>
+                <div class="flex items-center justify-between p-3 bg-red-50 rounded-lg border border-red-100">
+                  <div>
+                    <h4 class="font-medium text-zinc-900">Lab 5</h4>
+                    <p class="text-sm text-zinc-600">Capacity: 30 students</p>
+                  </div>
+                  <span class="text-xs px-3 py-1 bg-red-600 text-white rounded-full">Occupied</span>
+                </div>
+                <div class="flex items-center justify-between p-3 bg-emerald-50 rounded-lg border border-emerald-100">
+                  <div>
+                    <h4 class="font-medium text-zinc-900">Hall C</h4>
+                    <p class="text-sm text-zinc-600">Capacity: 100 students</p>
+                  </div>
+                  <span class="text-xs px-3 py-1 bg-emerald-600 text-white rounded-full">Available</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="flex items-center justify-between pt-8 pb-4 border-t border-zinc-200">
+            <p class="text-xs text-zinc-400">© 2024 Academia System Inc.</p>
+            <div class="flex gap-4 text-xs text-zinc-500">
+              <a href="#" class="hover:text-zinc-900">Privacy</a>
+              <a href="#" class="hover:text-zinc-900">Help</a>
+              <a href="#" class="hover:text-zinc-900">Status</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
