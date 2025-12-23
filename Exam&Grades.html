@@ -1,0 +1,1095 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exams & Grades - Academia</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://code.iconify.design/3/3.1.0/iconify.min.js"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body
+    class="text-zinc-900 antialiased selection:bg-zinc-900 selection:text-white flex h-screen overflow-hidden relative"
+  >
+    <div class="fixed inset-0 -z-10 h-full w-full bg-zinc-50">
+      <div
+        class="absolute h-full w-full bg-[radial-gradient(#e5e7eb_1px,transparent_1px)] [background-size:16px_16px] [mask-image:radial-gradient(ellipse_50%_50%_at_50%_50%,#000_70%,transparent_100%)]"
+      ></div>
+      <div
+        class="absolute top-[-10%] left-[-10%] h-[500px] w-[500px] rounded-full bg-blue-400/10 blur-[100px]"
+      ></div>
+      <div
+        class="absolute bottom-[-10%] right-[-10%] h-[500px] w-[500px] rounded-full bg-purple-400/10 blur-[100px]"
+      ></div>
+    </div>
+
+    <!-- Sidebar (Same structure as other pages) -->
+    <aside
+      class="w-64 bg-white/80 backdrop-blur-xl border-r border-zinc-200 hidden md:flex flex-col flex-shrink-0 z-20"
+    >
+      <div class="h-16 flex items-center px-6 border-b border-zinc-100">
+        <div class="flex items-center gap-2 text-zinc-900">
+          <div
+            class="w-8 h-8 bg-zinc-900 text-white rounded-lg flex items-center justify-center shadow-lg shadow-zinc-900/20"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="18"
+              height="18"
+              viewBox="0 0 24 24"
+            >
+              <g
+                fill="none"
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+              >
+                <path
+                  d="M21.42 10.922a1 1 0 0 0-.019-1.838L12.83 5.18a2 2 0 0 0-1.66 0L2.6 9.08a1 1 0 0 0 0 1.832l8.57 3.908a2 2 0 0 0 1.66 0zM22 10v6"
+                ></path>
+                <path d="M6 12.5V16a6 3 0 0 0 12 0v-3.5"></path>
+              </g>
+            </svg>
+          </div>
+          <span class="text-sm font-semibold tracking-tight">ACADEMIA</span>
+        </div>
+      </div>
+
+      <nav
+        class="flex-1 overflow-y-auto no-scrollbar pt-4 pr-3 pb-4 pl-3 space-y-1"
+      >
+        <div
+          class="px-3 mb-2 text-xs font-medium text-zinc-400 uppercase tracking-wider"
+        >
+          Overview
+        </div>
+        <a
+          href="index.html"
+          class="flex items-center gap-3 px-3 py-2 text-sm font-medium rounded-md text-zinc-500 hover:text-zinc-900 hover:bg-zinc-50 transition-all"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="18"
+            height="18"
+            viewBox="0 0 24 24"
+          >
+            <g
+              fill="none"
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+            >
+              <rect width="7" height="9" x="3" y="3" rx="1"></rect>
+              <rect width="7" height="5" x="14" y="3" rx="1"></rect>
+              <rect width="7" height="9" x="14" y="12" rx="1"></rect>
+              <rect width="7" height="5" x="3" y="16" rx="1"></rect>
+            </g>
+          </svg>
+          Dashboard
+        </a>
+        <a
+          href="student.html"
+          class="flex items-center gap-3 hover:text-zinc-900 hover:bg-zinc-50 transition-all text-sm font-medium text-zinc-500 rounded-md pt-2 pr-3 pb-2 pl-3"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="18"
+            height="18"
+            viewBox="0 0 24 24"
+          >
+            <g
+              fill="none"
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+            >
+              <path
+                d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2M16 3.128a4 4 0 0 1 0 7.744M22 21v-2a4 4 0 0 0-3-3.87"
+              ></path>
+              <circle cx="9" cy="7" r="4"></circle>
+            </g>
+          </svg>
+          Students
+        </a>
+        <a
+          href="faculty.html"
+          class="flex items-center gap-3 hover:text-zinc-900 hover:bg-zinc-50 transition-all text-sm font-medium text-zinc-500 rounded-md pt-2 pr-3 pb-2 pl-3"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="18"
+            height="18"
+            viewBox="0 0 24 24"
+          >
+            <g
+              fill="none"
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+            >
+              <path d="M16 20V4a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path>
+              <rect width="20" height="14" x="2" y="6" rx="2"></rect>
+            </g>
+          </svg>
+          Faculty
+        </a>
+        <a
+          href="courses.html"
+          class="flex items-center gap-3 px-3 py-2 text-sm font-medium rounded-md text-zinc-500 hover:text-zinc-900 hover:bg-zinc-50 transition-all"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="18"
+            height="18"
+            viewBox="0 0 24 24"
+          >
+            <path
+              fill="none"
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M12 7v14m-9-3a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h5a4 4 0 0 1 4 4a4 4 0 0 1 4-4h5a1 1 0 0 1 1 1v13a1 1 0 0 1-1 1h-6a3 3 0 0 0-3 3a3 3 0 0 0-3-3z"
+            ></path>
+          </svg>
+          Courses
+        </a>
+
+        <div
+          class="px-3 mt-6 mb-2 text-xs font-medium text-zinc-400 uppercase tracking-wider"
+        >
+          Management
+        </div>
+        <a
+          href="schedule.html"
+          class="flex items-center gap-3 px-3 py-2 text-sm font-medium rounded-md text-zinc-500 hover:text-zinc-900 hover:bg-zinc-50 transition-all"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="18"
+            height="18"
+            viewBox="0 0 24 24"
+          >
+            <g
+              fill="none"
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+            >
+              <path d="M8 2v4m8-4v4"></path>
+              <rect width="18" height="18" x="3" y="4" rx="2"></rect>
+              <path
+                d="M3 10h18M8 14h.01M12 14h.01M16 14h.01M8 18h.01M12 18h.01M16 18h.01"
+              ></path>
+            </g>
+          </svg>
+          Schedule
+        </a>
+        <a
+          href="exams-grades.html"
+          class="flex items-center gap-3 px-3 py-2 text-sm font-medium rounded-md bg-zinc-50 text-zinc-900 border border-zinc-200/60 shadow-sm"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="18"
+            height="18"
+            viewBox="0 0 24 24"
+          >
+            <g
+              fill="none"
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+            >
+              <path
+                d="M6 22a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h8a2.4 2.4 0 0 1 1.704.706l3.588 3.588A2.4 2.4 0 0 1 20 8v12a2 2 0 0 1-2 2z"
+              ></path>
+              <path d="M14 2v5a1 1 0 0 0 1 1h5M10 9H8m8 4H8m8 4H8"></path>
+            </g>
+          </svg>
+          Exams &amp; Grades
+        </a>
+        <a
+          href="finance.html"
+          class="flex items-center gap-3 px-3 py-2 text-sm font-medium rounded-md text-zinc-500 hover:text-zinc-900 hover:bg-zinc-50 transition-all"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="18"
+            height="18"
+            viewBox="0 0 24 24"
+          >
+            <g
+              fill="none"
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+            >
+              <path
+                d="M19 7V4a1 1 0 0 0-1-1H5a2 2 0 0 0 0 4h15a1 1 0 0 1 1 1v4h-3a2 2 0 0 0 0 4h3a1 1 0 0 0 1-1v-2a1 1 0 0 0-1-1"
+              ></path>
+              <path d="M3 5v14a2 2 0 0 0 2 2h15a1 1 0 0 0 1-1v-4"></path>
+            </g>
+          </svg>
+          Finance
+        </a>
+
+        <div
+          class="px-3 mt-6 mb-2 text-xs font-medium text-zinc-400 uppercase tracking-wider"
+        >
+          System
+        </div>
+        <a
+          href="#"
+          class="flex items-center gap-3 hover:text-zinc-900 hover:bg-zinc-50 transition-all text-sm font-medium text-zinc-500 rounded-md pt-2 pr-3 pb-2 pl-3"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="18"
+            height="18"
+            viewBox="0 0 24 24"
+          >
+            <path
+              fill="none"
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M3 3v18h18m-3-4V9m-5 8V5M8 17v-3"
+            ></path>
+          </svg>
+          Reports
+        </a>
+        <a
+          href="#"
+          class="flex items-center gap-3 px-3 py-2 text-sm font-medium rounded-md text-zinc-500 hover:text-zinc-900 hover:bg-zinc-50 transition-all"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="18"
+            height="18"
+            viewBox="0 0 24 24"
+          >
+            <g
+              fill="none"
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+            >
+              <path
+                d="M9.671 4.136a2.34 2.34 0 0 1 4.659 0a2.34 2.34 0 0 0 3.319 1.915a2.34 2.34 0 0 1 2.33 4.033a2.34 2.34 0 0 0 0 3.831a2.34 2.34 0 0 1-2.33 4.033a2.34 2.34 0 0 0-3.319 1.915a2.34 2.34 0 0 1-4.659 0a2.34 2.34 0 0 0-3.32-1.915a2.34 2.34 0 0 1-2.33-4.033a2.34 2.34 0 0 0 0-3.831A2.34 2.34 0 0 1 6.35 6.051a2.34 2.34 0 0 0 3.319-1.915"
+              ></path>
+              <circle cx="12" cy="12" r="3"></circle>
+            </g>
+          </svg>
+          Settings
+        </a>
+      </nav>
+
+      <div class="p-4 border-t border-zinc-100">
+        <button
+          class="flex items-center gap-3 w-full hover:bg-zinc-50 p-2 rounded-md transition-colors text-left group"
+        >
+          <div
+            class="w-8 h-8 rounded-full bg-zinc-200 flex items-center justify-center text-zinc-600"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              height="16"
+              viewBox="0 0 24 24"
+            >
+              <g
+                fill="none"
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+              >
+                <path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"></path>
+                <circle cx="12" cy="7" r="4"></circle>
+              </g>
+            </svg>
+          </div>
+          <div class="flex-1 min-w-0">
+            <p
+              class="group-hover:text-zinc-950 truncate text-sm font-medium text-zinc-900"
+            >
+              Hey, OM
+            </p>
+            <p class="text-xs text-zinc-500 truncate">Administrator</p>
+          </div>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="14"
+            height="14"
+            viewBox="0 0 24 24"
+          >
+            <path
+              fill="none"
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="m7 15l5 5l5-5M7 9l5-5l5 5"
+            ></path>
+          </svg>
+        </button>
+      </div>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="flex-1 flex flex-col min-w-0 overflow-hidden bg-white/30">
+      <header
+        class="h-16 flex items-center justify-between px-6 border-b border-zinc-200 bg-white/60 backdrop-blur-md sticky top-0 z-10"
+      >
+        <div class="hidden md:flex items-center gap-2 text-sm">
+          <span class="text-zinc-500">Management</span>
+          <span class="text-zinc-300">/</span>
+          <span class="font-medium text-zinc-900">Exams & Grades</span>
+        </div>
+        <div class="flex items-center gap-4">
+          <button
+            class="relative p-2 text-zinc-400 hover:text-zinc-900 hover:bg-zinc-100/50 rounded-md transition-colors"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="20"
+              height="20"
+              viewBox="0 0 24 24"
+            >
+              <path
+                fill="none"
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M10.268 21a2 2 0 0 0 3.464 0m-10.47-5.674A1 1 0 0 0 4 17h16a1 1 0 0 0 .74-1.673C19.41 13.956 18 12.499 18 8A6 6 0 0 0 6 8c0 4.499-1.411 5.956-2.738 7.326"
+              ></path>
+            </svg>
+            <span
+              class="absolute top-2 right-2 w-2 h-2 bg-red-500 rounded-full border-2 border-white"
+            ></span>
+          </button>
+        </div>
+      </header>
+
+      <div class="flex-1 overflow-y-auto lg:p-10 pt-6 pr-6 pb-6 pl-6">
+        <div class="max-w-7xl mx-auto space-y-8">
+          <div
+            class="flex flex-col sm:flex-row sm:items-center justify-between gap-4"
+          >
+            <div>
+              <h1 class="text-2xl font-semibold text-zinc-900 tracking-tight">
+                Examinations & Grading
+              </h1>
+              <p class="text-zinc-500 text-sm mt-1">
+                Manage exams, view results, and track student performance.
+              </p>
+            </div>
+            <div class="flex items-center gap-2">
+              <button
+                class="hover:bg-zinc-50 transition-all text-sm font-medium text-zinc-900 bg-white h-9 border-zinc-200 border rounded-md pr-4 pl-4 shadow-sm"
+              >
+                Publish Results
+              </button>
+              <button
+                class="hover:bg-zinc-800 shadow-zinc-900/10 flex gap-2 transition-all text-sm font-medium text-white bg-zinc-900 h-9 rounded-md px-4 shadow-lg items-center"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M5 12h14m-7-7v14"
+                  ></path>
+                </svg>
+                Schedule Exam
+              </button>
+            </div>
+          </div>
+
+          <!-- Stats -->
+          <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+            <div
+              class="bg-white/80 backdrop-blur-sm p-4 rounded-xl border border-zinc-200/60"
+            >
+              <div class="flex items-center justify-between mb-2">
+                <div class="p-2 bg-blue-50 text-blue-600 rounded-lg">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="20"
+                    height="20"
+                    viewBox="0 0 24 24"
+                  >
+                    <g
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                    >
+                      <path d="M8 2v4m8-4v4"></path>
+                      <rect width="18" height="18" x="3" y="4" rx="2"></rect>
+                      <path d="M3 10h18"></path>
+                    </g>
+                  </svg>
+                </div>
+              </div>
+              <h3 class="text-2xl font-semibold text-zinc-900">45</h3>
+              <p class="text-xs text-zinc-500 uppercase tracking-wide mt-1">
+                Upcoming Exams
+              </p>
+            </div>
+
+            <div
+              class="bg-white/80 backdrop-blur-sm p-4 rounded-xl border border-zinc-200/60"
+            >
+              <div class="flex items-center justify-between mb-2">
+                <div class="p-2 bg-emerald-50 text-emerald-600 rounded-lg">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="20"
+                    height="20"
+                    viewBox="0 0 24 24"
+                  >
+                    <g
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                    >
+                      <path d="M12 2a10 10 0 1 0 10 10"></path>
+                      <path d="m12 8l4 4l6-6"></path>
+                    </g>
+                  </svg>
+                </div>
+              </div>
+              <h3 class="text-2xl font-semibold text-zinc-900">98.5%</h3>
+              <p class="text-xs text-zinc-500 uppercase tracking-wide mt-1">
+                Pass Rate
+              </p>
+            </div>
+
+            <div
+              class="bg-white/80 backdrop-blur-sm p-4 rounded-xl border border-zinc-200/60"
+            >
+              <div class="flex items-center justify-between mb-2">
+                <div class="p-2 bg-purple-50 text-purple-600 rounded-lg">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="20"
+                    height="20"
+                    viewBox="0 0 24 24"
+                  >
+                    <g
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                    >
+                      <path
+                        d="M21.42 10.922a1 1 0 0 0-.019-1.838L12.83 5.18a2 2 0 0 0-1.66 0L2.6 9.08a1 1 0 0 0 0 1.832l8.57 3.908a2 2 0 0 0 1.66 0zM22 10v6"
+                      ></path>
+                      <path d="M6 12.5V16a6 3 0 0 0 12 0v-3.5"></path>
+                    </g>
+                  </svg>
+                </div>
+              </div>
+              <h3 class="text-2xl font-semibold text-zinc-900">8.7</h3>
+              <p class="text-xs text-zinc-500 uppercase tracking-wide mt-1">
+                Avg. GPA
+              </p>
+            </div>
+
+            <div
+              class="bg-white/80 backdrop-blur-sm p-4 rounded-xl border border-zinc-200/60"
+            >
+              <div class="flex items-center justify-between mb-2">
+                <div class="p-2 bg-amber-50 text-amber-600 rounded-lg">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="20"
+                    height="20"
+                    viewBox="0 0 24 24"
+                  >
+                    <g
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                    >
+                      <path
+                        d="M6 22a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h8a2.4 2.4 0 0 1 1.704.706l3.588 3.588A2.4 2.4 0 0 1 20 8v12a2 2 0 0 1-2 2z"
+                      ></path>
+                      <path
+                        d="M14 2v5a1 1 0 0 0 1 1h5M10 9H8m8 4H8m8 4H8"
+                      ></path>
+                    </g>
+                  </svg>
+                </div>
+              </div>
+              <h3 class="text-2xl font-semibold text-zinc-900">284</h3>
+              <p class="text-xs text-zinc-500 uppercase tracking-wide mt-1">
+                Graded Exams
+              </p>
+            </div>
+          </div>
+
+          <!-- Upcoming Exams -->
+          <div
+            class="bg-white/80 backdrop-blur-sm border border-zinc-200 rounded-xl shadow-sm overflow-hidden"
+          >
+            <div class="p-6 border-b border-zinc-100">
+              <h3 class="font-semibold text-zinc-900">Upcoming Examinations</h3>
+            </div>
+            <div class="overflow-x-auto">
+              <table class="w-full text-left text-sm">
+                <thead class="bg-zinc-50/50 border-b border-zinc-100">
+                  <tr>
+                    <th
+                      class="px-6 py-3 font-medium text-zinc-500 text-xs uppercase tracking-wider"
+                    >
+                      Course
+                    </th>
+                    <th
+                      class="px-6 py-3 font-medium text-zinc-500 text-xs uppercase tracking-wider"
+                    >
+                      Code
+                    </th>
+                    <th
+                      class="px-6 py-3 font-medium text-zinc-500 text-xs uppercase tracking-wider"
+                    >
+                      Date
+                    </th>
+                    <th
+                      class="px-6 py-3 font-medium text-zinc-500 text-xs uppercase tracking-wider"
+                    >
+                      Time
+                    </th>
+                    <th
+                      class="px-6 py-3 font-medium text-zinc-500 text-xs uppercase tracking-wider"
+                    >
+                      Venue
+                    </th>
+                    <th
+                      class="px-6 py-3 font-medium text-zinc-500 text-xs uppercase tracking-wider"
+                    >
+                      Students
+                    </th>
+                    <th
+                      class="px-6 py-3 font-medium text-zinc-500 text-xs uppercase tracking-wider text-right"
+                    >
+                      Status
+                    </th>
+                  </tr>
+                </thead>
+                <tbody class="divide-y divide-zinc-100">
+                  <tr class="hover:bg-zinc-50/80 transition-colors">
+                    <td class="px-6 py-4">
+                      <div>
+                        <p class="font-medium text-zinc-900">Data Structures</p>
+                        <p class="text-xs text-zinc-500">Mid-Term Exam</p>
+                      </div>
+                    </td>
+                    <td class="px-6 py-4 text-zinc-600 font-mono text-xs">
+                      CS-101
+                    </td>
+                    <td class="px-6 py-4 text-zinc-600">Dec 20, 2024</td>
+                    <td class="px-6 py-4 text-zinc-600">09:00 - 11:00</td>
+                    <td class="px-6 py-4 text-zinc-600">Hall A</td>
+                    <td class="px-6 py-4 text-zinc-600">124</td>
+                    <td class="px-6 py-4 text-right">
+                      <span
+                        class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-blue-50 text-blue-700 border border-blue-100"
+                        >Scheduled</span
+                      >
+                    </td>
+                  </tr>
+                  <tr class="hover:bg-zinc-50/80 transition-colors">
+                    <td class="px-6 py-4">
+                      <div>
+                        <p class="font-medium text-zinc-900">Thermodynamics</p>
+                        <p class="text-xs text-zinc-500">Final Exam</p>
+                      </div>
+                    </td>
+                    <td class="px-6 py-4 text-zinc-600 font-mono text-xs">
+                      PHY-301
+                    </td>
+                    <td class="px-6 py-4 text-zinc-600">Dec 22, 2024</td>
+                    <td class="px-6 py-4 text-zinc-600">14:00 - 16:30</td>
+                    <td class="px-6 py-4 text-zinc-600">Lab 2</td>
+                    <td class="px-6 py-4 text-zinc-600">85</td>
+                    <td class="px-6 py-4 text-right">
+                      <span
+                        class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-blue-50 text-blue-700 border border-blue-100"
+                        >Scheduled</span
+                      >
+                    </td>
+                  </tr>
+                  <tr class="hover:bg-zinc-50/80 transition-colors">
+                    <td class="px-6 py-4">
+                      <div>
+                        <p class="font-medium text-zinc-900">
+                          Marketing Fundamentals
+                        </p>
+                        <p class="text-xs text-zinc-500">Mid-Term Exam</p>
+                      </div>
+                    </td>
+                    <td class="px-6 py-4 text-zinc-600 font-mono text-xs">
+                      BBA-201
+                    </td>
+                    <td class="px-6 py-4 text-zinc-600">Dec 23, 2024</td>
+                    <td class="px-6 py-4 text-zinc-600">10:00 - 12:00</td>
+                    <td class="px-6 py-4 text-zinc-600">Hall C</td>
+                    <td class="px-6 py-4 text-zinc-600">98</td>
+                    <td class="px-6 py-4 text-right">
+                      <span
+                        class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-amber-50 text-amber-700 border border-amber-100"
+                        >Pending</span
+                      >
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+
+          <!-- Student Results -->
+          <div
+            class="bg-white/80 backdrop-blur-sm border border-zinc-200 rounded-xl shadow-sm overflow-hidden"
+          >
+            <div
+              class="p-6 border-b border-zinc-100 flex items-center justify-between"
+            >
+              <h3 class="font-semibold text-zinc-900">Recent Results</h3>
+              <div class="flex items-center gap-2">
+                <input
+                  type="text"
+                  placeholder="Search student..."
+                  class="h-9 w-64 px-3 bg-white border border-zinc-200 rounded-md text-sm text-zinc-900 placeholder-zinc-400 focus:outline-none focus:ring-1 focus:ring-zinc-300"
+                />
+              </div>
+            </div>
+            <div class="overflow-x-auto">
+              <table class="w-full text-left text-sm">
+                <thead class="bg-zinc-50/50 border-b border-zinc-100">
+                  <tr>
+                    <th
+                      class="px-6 py-3 font-medium text-zinc-500 text-xs uppercase tracking-wider"
+                    >
+                      Student
+                    </th>
+                    <th
+                      class="px-6 py-3 font-medium text-zinc-500 text-xs uppercase tracking-wider"
+                    >
+                      Course
+                    </th>
+                    <th
+                      class="px-6 py-3 font-medium text-zinc-500 text-xs uppercase tracking-wider"
+                    >
+                      Score
+                    </th>
+                    <th
+                      class="px-6 py-3 font-medium text-zinc-500 text-xs uppercase tracking-wider"
+                    >
+                      Grade
+                    </th>
+                    <th
+                      class="px-6 py-3 font-medium text-zinc-500 text-xs uppercase tracking-wider"
+                    >
+                      GPA
+                    </th>
+                    <th
+                      class="px-6 py-3 font-medium text-zinc-500 text-xs uppercase tracking-wider"
+                    >
+                      Status
+                    </th>
+                    <th
+                      class="px-6 py-3 font-medium text-zinc-500 text-xs uppercase tracking-wider text-right"
+                    >
+                      Action
+                    </th>
+                  </tr>
+                </thead>
+                <tbody class="divide-y divide-zinc-100">
+                  <tr class="hover:bg-zinc-50/80 transition-colors">
+                    <td class="px-6 py-4">
+                      <div class="flex items-center gap-3">
+                        <div
+                          class="w-8 h-8 rounded-full bg-gradient-to-tr from-blue-100 to-indigo-100 flex items-center justify-center text-blue-700 text-xs font-medium"
+                        >
+                          JD
+                        </div>
+                        <div>
+                          <p class="font-medium text-zinc-900">John Doe</p>
+                          <p class="text-xs text-zinc-500">#ST-2024-001</p>
+                        </div>
+                      </div>
+                    </td>
+                    <td class="px-6 py-4">
+                      <p class="text-zinc-900">Data Structures</p>
+                      <p class="text-xs text-zinc-500">CS-101</p>
+                    </td>
+                    <td class="px-6 py-4 font-semibold text-zinc-900">
+                      92/100
+                    </td>
+                    <td class="px-6 py-4">
+                      <span
+                        class="inline-flex items-center px-2.5 py-1 rounded-full text-xs font-bold bg-emerald-100 text-emerald-700 border border-emerald-200"
+                        >A</span
+                      >
+                    </td>
+                    <td class="px-6 py-4 font-semibold text-zinc-900">9.2</td>
+                    <td class="px-6 py-4">
+                      <span
+                        class="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full text-xs font-medium bg-emerald-50 text-emerald-700 border border-emerald-100"
+                      >
+                        <span
+                          class="w-1.5 h-1.5 rounded-full bg-emerald-500"
+                        ></span>
+                        Pass
+                      </span>
+                    </td>
+                    <td class="px-6 py-4 text-right">
+                      <button
+                        class="text-sm text-blue-600 hover:text-blue-700 font-medium"
+                      >
+                        View
+                      </button>
+                    </td>
+                  </tr>
+                  <tr class="hover:bg-zinc-50/80 transition-colors">
+                    <td class="px-6 py-4">
+                      <div class="flex items-center gap-3">
+                        <div
+                          class="w-8 h-8 rounded-full bg-gradient-to-tr from-amber-100 to-orange-100 flex items-center justify-center text-amber-700 text-xs font-medium"
+                        >
+                          AS
+                        </div>
+                        <div>
+                          <p class="font-medium text-zinc-900">Arush Shah</p>
+                          <p class="text-xs text-zinc-500">#ST-2024-042</p>
+                        </div>
+                      </div>
+                    </td>
+                    <td class="px-6 py-4">
+                      <p class="text-zinc-900">Marketing</p>
+                      <p class="text-xs text-zinc-500">BBA-201</p>
+                    </td>
+                    <td class="px-6 py-4 font-semibold text-zinc-900">
+                      88/100
+                    </td>
+                    <td class="px-6 py-4">
+                      <span
+                        class="inline-flex items-center px-2.5 py-1 rounded-full text-xs font-bold bg-blue-100 text-blue-700 border border-blue-200"
+                        >A-</span
+                      >
+                    </td>
+                    <td class="px-6 py-4 font-semibold text-zinc-900">8.8</td>
+                    <td class="px-6 py-4">
+                      <span
+                        class="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full text-xs font-medium bg-emerald-50 text-emerald-700 border border-emerald-100"
+                      >
+                        <span
+                          class="w-1.5 h-1.5 rounded-full bg-emerald-500"
+                        ></span>
+                        Pass
+                      </span>
+                    </td>
+                    <td class="px-6 py-4 text-right">
+                      <button
+                        class="text-sm text-blue-600 hover:text-blue-700 font-medium"
+                      >
+                        View
+                      </button>
+                    </td>
+                  </tr>
+                  <tr class="hover:bg-zinc-50/80 transition-colors">
+                    <td class="px-6 py-4">
+                      <div class="flex items-center gap-3">
+                        <div
+                          class="w-8 h-8 rounded-full bg-gradient-to-tr from-rose-100 to-pink-100 flex items-center justify-center text-rose-700 text-xs font-medium"
+                        >
+                          MK
+                        </div>
+                        <div>
+                          <p class="font-medium text-zinc-900">Michael Kumar</p>
+                          <p class="text-xs text-zinc-500">#ST-2024-089</p>
+                        </div>
+                      </div>
+                    </td>
+                    <td class="px-6 py-4">
+                      <p class="text-zinc-900">Robotics</p>
+                      <p class="text-xs text-zinc-500">ROB-401</p>
+                    </td>
+                    <td class="px-6 py-4 font-semibold text-zinc-900">
+                      95/100
+                    </td>
+                    <td class="px-6 py-4">
+                      <span
+                        class="inline-flex items-center px-2.5 py-1 rounded-full text-xs font-bold bg-emerald-100 text-emerald-700 border border-emerald-200"
+                        >A+</span
+                      >
+                    </td>
+                    <td class="px-6 py-4 font-semibold text-zinc-900">9.5</td>
+                    <td class="px-6 py-4">
+                      <span
+                        class="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full text-xs font-medium bg-emerald-50 text-emerald-700 border border-emerald-100"
+                      >
+                        <span
+                          class="w-1.5 h-1.5 rounded-full bg-emerald-500"
+                        ></span>
+                        Pass
+                      </span>
+                    </td>
+                    <td class="px-6 py-4 text-right">
+                      <button
+                        class="text-sm text-blue-600 hover:text-blue-700 font-medium"
+                      >
+                        View
+                      </button>
+                    </td>
+                  </tr>
+                  <tr class="hover:bg-zinc-50/80 transition-colors">
+                    <td class="px-6 py-4">
+                      <div class="flex items-center gap-3">
+                        <div
+                          class="w-8 h-8 rounded-full bg-gradient-to-tr from-cyan-100 to-blue-100 flex items-center justify-center text-cyan-700 text-xs font-medium"
+                        >
+                          RL
+                        </div>
+                        <div>
+                          <p class="font-medium text-zinc-900">Rohan Lee</p>
+                          <p class="text-xs text-zinc-500">#ST-2024-112</p>
+                        </div>
+                      </div>
+                    </td>
+                    <td class="px-6 py-4">
+                      <p class="text-zinc-900">Fluid Mechanics</p>
+                      <p class="text-xs text-zinc-500">ME-302</p>
+                    </td>
+                    <td class="px-6 py-4 font-semibold text-zinc-900">
+                      78/100
+                    </td>
+                    <td class="px-6 py-4">
+                      <span
+                        class="inline-flex items-center px-2.5 py-1 rounded-full text-xs font-bold bg-purple-100 text-purple-700 border border-purple-200"
+                        >B+</span
+                      >
+                    </td>
+                    <td class="px-6 py-4 font-semibold text-zinc-900">7.8</td>
+                    <td class="px-6 py-4">
+                      <span
+                        class="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full text-xs font-medium bg-emerald-50 text-emerald-700 border border-emerald-100"
+                      >
+                        <span
+                          class="w-1.5 h-1.5 rounded-full bg-emerald-500"
+                        ></span>
+                        Pass
+                      </span>
+                    </td>
+                    <td class="px-6 py-4 text-right">
+                      <button
+                        class="text-sm text-blue-600 hover:text-blue-700 font-medium"
+                      >
+                        View
+                      </button>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+
+          <!-- Grade Distribution -->
+          <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
+            <div
+              class="bg-white/80 backdrop-blur-sm border border-zinc-200 rounded-xl shadow-sm p-6"
+            >
+              <h3 class="font-semibold text-zinc-900 mb-4">
+                Grade Distribution
+              </h3>
+              <div class="space-y-3">
+                <div class="flex items-center justify-between">
+                  <span class="text-sm font-medium text-zinc-600"
+                    >A+ (90-100)</span
+                  >
+                  <div class="flex items-center gap-3 flex-1 ml-4">
+                    <div
+                      class="flex-1 bg-zinc-100 rounded-full h-2 overflow-hidden"
+                    >
+                      <div
+                        class="bg-emerald-500 h-full"
+                        style="width: 35%"
+                      ></div>
+                    </div>
+                    <span
+                      class="text-sm font-semibold text-zinc-900 w-12 text-right"
+                      >35%</span
+                    >
+                  </div>
+                </div>
+                <div class="flex items-center justify-between">
+                  <span class="text-sm font-medium text-zinc-600"
+                    >A (80-89)</span
+                  >
+                  <div class="flex items-center gap-3 flex-1 ml-4">
+                    <div
+                      class="flex-1 bg-zinc-100 rounded-full h-2 overflow-hidden"
+                    >
+                      <div class="bg-blue-500 h-full" style="width: 40%"></div>
+                    </div>
+                    <span
+                      class="text-sm font-semibold text-zinc-900 w-12 text-right"
+                      >40%</span
+                    >
+                  </div>
+                </div>
+                <div class="flex items-center justify-between">
+                  <span class="text-sm font-medium text-zinc-600"
+                    >B (70-79)</span
+                  >
+                  <div class="flex items-center gap-3 flex-1 ml-4">
+                    <div
+                      class="flex-1 bg-zinc-100 rounded-full h-2 overflow-hidden"
+                    >
+                      <div
+                        class="bg-purple-500 h-full"
+                        style="width: 18%"
+                      ></div>
+                    </div>
+                    <span
+                      class="text-sm font-semibold text-zinc-900 w-12 text-right"
+                      >18%</span
+                    >
+                  </div>
+                </div>
+                <div class="flex items-center justify-between">
+                  <span class="text-sm font-medium text-zinc-600"
+                    >C (60-69)</span
+                  >
+                  <div class="flex items-center gap-3 flex-1 ml-4">
+                    <div
+                      class="flex-1 bg-zinc-100 rounded-full h-2 overflow-hidden"
+                    >
+                      <div class="bg-amber-500 h-full" style="width: 5%"></div>
+                    </div>
+                    <span
+                      class="text-sm font-semibold text-zinc-900 w-12 text-right"
+                      >5%</span
+                    >
+                  </div>
+                </div>
+                <div class="flex items-center justify-between">
+                  <span class="text-sm font-medium text-zinc-600"
+                    >F (< 60)</span
+                  >
+                  <div class="flex items-center gap-3 flex-1 ml-4">
+                    <div
+                      class="flex-1 bg-zinc-100 rounded-full h-2 overflow-hidden"
+                    >
+                      <div class="bg-red-500 h-full" style="width: 2%"></div>
+                    </div>
+                    <span
+                      class="text-sm font-semibold text-zinc-900 w-12 text-right"
+                      >2%</span
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="bg-white/80 backdrop-blur-sm border border-zinc-200 rounded-xl shadow-sm p-6"
+            >
+              <h3 class="font-semibold text-zinc-900 mb-4">Top Performers</h3>
+              <div class="space-y-3">
+                <div
+                  class="flex items-center gap-3 p-3 bg-gradient-to-r from-emerald-50 to-emerald-100 rounded-lg border border-emerald-200"
+                >
+                  <div
+                    class="w-10 h-10 rounded-full bg-emerald-500 text-white flex items-center justify-center font-bold text-sm"
+                  >
+                    1
+                  </div>
+                  <div class="flex-1">
+                    <p class="font-semibold text-zinc-900">Sarah Williams</p>
+                    <p class="text-xs text-zinc-600">Computer Science</p>
+                  </div>
+                  <div class="text-right">
+                    <p class="font-bold text-zinc-900">9.8</p>
+                    <p class="text-xs text-zinc-600">GPA</p>
+                  </div>
+                </div>
+                <div class="flex items-center gap-3 p-3 bg-zinc-50 rounded-lg">
+                  <div
+                    class="w-10 h-10 rounded-full bg-zinc-400 text-white flex items-center justify-center font-bold text-sm"
+                  >
+                    2
+                  </div>
+                  <div class="flex-1">
+                    <p class="font-semibold text-zinc-900">Alex Chen</p>
+                    <p class="text-xs text-zinc-600">Robotics</p>
+                  </div>
+                  <div class="text-right">
+                    <p class="font-bold text-zinc-900">9.6</p>
+                    <p class="text-xs text-zinc-600">GPA</p>
+                  </div>
+                </div>
+                <div class="flex items-center gap-3 p-3 bg-zinc-50 rounded-lg">
+                  <div
+                    class="w-10 h-10 rounded-full bg-amber-600 text-white flex items-center justify-center font-bold text-sm"
+                  >
+                    3
+                  </div>
+                  <div class="flex-1">
+                    <p class="font-semibold text-zinc-900">Priya Desai</p>
+                    <p class="text-xs text-zinc-600">Aerospace</p>
+                  </div>
+                  <div class="text-right">
+                    <p class="font-bold text-zinc-900">9.5</p>
+                    <p class="text-xs text-zinc-600">GPA</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="flex items-center justify-between pt-8 pb-4 border-t border-zinc-200"
+          >
+            <p class="text-xs text-zinc-400">© 2024 Academia System Inc.</p>
+            <div class="flex gap-4 text-xs text-zinc-500">
+              <a href="#" class="hover:text-zinc-900">Privacy</a>
+              <a href="#" class="hover:text-zinc-900">Help</a>
+              <a href="#" class="hover:text-zinc-900">Status</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
