@@ -1,0 +1,1621 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Faculty - Academia</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://code.iconify.design/3/3.1.0/iconify.min.js"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body
+    class="text-zinc-900 antialiased selection:bg-zinc-900 selection:text-white flex h-screen overflow-hidden relative"
+  >
+    <!-- Background Layer -->
+    <div class="fixed inset-0 -z-10 h-full w-full bg-zinc-50">
+      <div
+        class="absolute h-full w-full bg-[radial-gradient(#e5e7eb_1px,transparent_1px)] [background-size:16px_16px] [mask-image:radial-gradient(ellipse_50%_50%_at_50%_50%,#000_70%,transparent_100%)]"
+      ></div>
+      <div
+        class="absolute top-[-10%] left-[-10%] h-[500px] w-[500px] rounded-full bg-blue-400/10 blur-[100px]"
+      ></div>
+      <div
+        class="absolute bottom-[-10%] right-[-10%] h-[500px] w-[500px] rounded-full bg-purple-400/10 blur-[100px]"
+      ></div>
+    </div>
+
+    <!-- Sidebar -->
+    <aside
+      class="w-64 bg-white/80 backdrop-blur-xl border-r border-zinc-200 hidden md:flex flex-col flex-shrink-0 z-20"
+    >
+      <div class="h-16 flex items-center px-6 border-b border-zinc-100">
+        <div class="flex items-center gap-2 text-zinc-900">
+          <div
+            class="w-8 h-8 bg-zinc-900 text-white rounded-lg flex items-center justify-center shadow-lg shadow-zinc-900/20"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="18"
+              height="18"
+              viewBox="0 0 24 24"
+            >
+              <g
+                fill="none"
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+              >
+                <path
+                  d="M21.42 10.922a1 1 0 0 0-.019-1.838L12.83 5.18a2 2 0 0 0-1.66 0L2.6 9.08a1 1 0 0 0 0 1.832l8.57 3.908a2 2 0 0 0 1.66 0zM22 10v6"
+                ></path>
+                <path d="M6 12.5V16a6 3 0 0 0 12 0v-3.5"></path>
+              </g>
+            </svg>
+          </div>
+          <span class="text-sm font-semibold tracking-tight">ACADEMIA</span>
+        </div>
+      </div>
+
+      <nav
+        class="flex-1 overflow-y-auto no-scrollbar pt-4 pr-3 pb-4 pl-3 space-y-1"
+      >
+        <div
+          class="px-3 mb-2 text-xs font-medium text-zinc-400 uppercase tracking-wider"
+        >
+          Overview
+        </div>
+        <a
+          href="index.html"
+          class="flex items-center gap-3 px-3 py-2 text-sm font-medium rounded-md text-zinc-500 hover:text-zinc-900 hover:bg-zinc-50 transition-all"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="18"
+            height="18"
+            viewBox="0 0 24 24"
+          >
+            <g
+              fill="none"
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+            >
+              <rect width="7" height="9" x="3" y="3" rx="1"></rect>
+              <rect width="7" height="5" x="14" y="3" rx="1"></rect>
+              <rect width="7" height="9" x="14" y="12" rx="1"></rect>
+              <rect width="7" height="5" x="3" y="16" rx="1"></rect>
+            </g>
+          </svg>
+          Dashboard
+        </a>
+        <a
+          href="student.html"
+          class="flex items-center gap-3 hover:text-zinc-900 hover:bg-zinc-50 transition-all text-sm font-medium text-zinc-500 rounded-md pt-2 pr-3 pb-2 pl-3"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="18"
+            height="18"
+            viewBox="0 0 24 24"
+          >
+            <g
+              fill="none"
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+            >
+              <path
+                d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2M16 3.128a4 4 0 0 1 0 7.744M22 21v-2a4 4 0 0 0-3-3.87"
+              ></path>
+              <circle cx="9" cy="7" r="4"></circle>
+            </g>
+          </svg>
+          Students
+        </a>
+        <a
+          href="faculty.html"
+          class="flex items-center gap-3 px-3 py-2 text-sm font-medium rounded-md bg-zinc-50 text-zinc-900 border border-zinc-200/60 shadow-sm"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="18"
+            height="18"
+            viewBox="0 0 24 24"
+          >
+            <g
+              fill="none"
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+            >
+              <path d="M16 20V4a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path>
+              <rect width="20" height="14" x="2" y="6" rx="2"></rect>
+            </g>
+          </svg>
+          Faculty
+        </a>
+        <a
+          href="courses.html"
+          class="flex items-center gap-3 px-3 py-2 text-sm font-medium rounded-md text-zinc-500 hover:text-zinc-900 hover:bg-zinc-50 transition-all"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="18"
+            height="18"
+            viewBox="0 0 24 24"
+          >
+            <path
+              fill="none"
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M12 7v14m-9-3a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h5a4 4 0 0 1 4 4a4 4 0 0 1 4-4h5a1 1 0 0 1 1 1v13a1 1 0 0 1-1 1h-6a3 3 0 0 0-3 3a3 3 0 0 0-3-3z"
+            ></path>
+          </svg>
+          Courses
+        </a>
+
+        <div
+          class="px-3 mt-6 mb-2 text-xs font-medium text-zinc-400 uppercase tracking-wider"
+        >
+          Management
+        </div>
+        <a
+          href="schedule.html"
+          class="flex items-center gap-3 px-3 py-2 text-sm font-medium rounded-md text-zinc-500 hover:text-zinc-900 hover:bg-zinc-50 transition-all"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="18"
+            height="18"
+            viewBox="0 0 24 24"
+          >
+            <g
+              fill="none"
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+            >
+              <path d="M8 2v4m8-4v4"></path>
+              <rect width="18" height="18" x="3" y="4" rx="2"></rect>
+              <path
+                d="M3 10h18M8 14h.01M12 14h.01M16 14h.01M8 18h.01M12 18h.01M16 18h.01"
+              ></path>
+            </g>
+          </svg>
+          Schedule
+        </a>
+        <a
+          href="exams-grades.html"
+          class="flex items-center gap-3 px-3 py-2 text-sm font-medium rounded-md text-zinc-500 hover:text-zinc-900 hover:bg-zinc-50 transition-all"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="18"
+            height="18"
+            viewBox="0 0 24 24"
+          >
+            <g
+              fill="none"
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+            >
+              <path
+                d="M6 22a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h8a2.4 2.4 0 0 1 1.704.706l3.588 3.588A2.4 2.4 0 0 1 20 8v12a2 2 0 0 1-2 2z"
+              ></path>
+              <path d="M14 2v5a1 1 0 0 0 1 1h5M10 9H8m8 4H8m8 4H8"></path>
+            </g>
+          </svg>
+          Exams &amp; Grades
+        </a>
+        <a
+          href="finance.html"
+          class="flex items-center gap-3 px-3 py-2 text-sm font-medium rounded-md text-zinc-500 hover:text-zinc-900 hover:bg-zinc-50 transition-all"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="18"
+            height="18"
+            viewBox="0 0 24 24"
+          >
+            <g
+              fill="none"
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+            >
+              <path
+                d="M19 7V4a1 1 0 0 0-1-1H5a2 2 0 0 0 0 4h15a1 1 0 0 1 1 1v4h-3a2 2 0 0 0 0 4h3a1 1 0 0 0 1-1v-2a1 1 0 0 0-1-1"
+              ></path>
+              <path d="M3 5v14a2 2 0 0 0 2 2h15a1 1 0 0 0 1-1v-4"></path>
+            </g>
+          </svg>
+          Finance
+        </a>
+
+        <div
+          class="px-3 mt-6 mb-2 text-xs font-medium text-zinc-400 uppercase tracking-wider"
+        >
+          System
+        </div>
+        <a
+          href="#"
+          class="flex items-center gap-3 hover:text-zinc-900 hover:bg-zinc-50 transition-all text-sm font-medium text-zinc-500 rounded-md pt-2 pr-3 pb-2 pl-3"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="18"
+            height="18"
+            viewBox="0 0 24 24"
+          >
+            <path
+              fill="none"
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M3 3v18h18m-3-4V9m-5 8V5M8 17v-3"
+            ></path>
+          </svg>
+          Reports
+        </a>
+        <a
+          href="#"
+          class="flex items-center gap-3 px-3 py-2 text-sm font-medium rounded-md text-zinc-500 hover:text-zinc-900 hover:bg-zinc-50 transition-all"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="18"
+            height="18"
+            viewBox="0 0 24 24"
+          >
+            <g
+              fill="none"
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+            >
+              <path
+                d="M9.671 4.136a2.34 2.34 0 0 1 4.659 0a2.34 2.34 0 0 0 3.319 1.915a2.34 2.34 0 0 1 2.33 4.033a2.34 2.34 0 0 0 0 3.831a2.34 2.34 0 0 1-2.33 4.033a2.34 2.34 0 0 0-3.319 1.915a2.34 2.34 0 0 1-4.659 0a2.34 2.34 0 0 0-3.32-1.915a2.34 2.34 0 0 1-2.33-4.033a2.34 2.34 0 0 0 0-3.831A2.34 2.34 0 0 1 6.35 6.051a2.34 2.34 0 0 0 3.319-1.915"
+              ></path>
+              <circle cx="12" cy="12" r="3"></circle>
+            </g>
+          </svg>
+          Settings
+        </a>
+      </nav>
+
+      <div class="p-4 border-t border-zinc-100">
+        <button
+          class="flex items-center gap-3 w-full hover:bg-zinc-50 p-2 rounded-md transition-colors text-left group"
+        >
+          <div
+            class="w-8 h-8 rounded-full bg-zinc-200 flex items-center justify-center text-zinc-600"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              height="16"
+              viewBox="0 0 24 24"
+            >
+              <g
+                fill="none"
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+              >
+                <path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"></path>
+                <circle cx="12" cy="7" r="4"></circle>
+              </g>
+            </svg>
+          </div>
+          <div class="flex-1 min-w-0">
+            <p
+              class="group-hover:text-zinc-950 truncate text-sm font-medium text-zinc-900"
+            >
+              Hey, OM
+            </p>
+            <p class="text-xs text-zinc-500 truncate">Administrator</p>
+          </div>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="14"
+            height="14"
+            viewBox="0 0 24 24"
+          >
+            <path
+              fill="none"
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="m7 15l5 5l5-5M7 9l5-5l5 5"
+            ></path>
+          </svg>
+        </button>
+      </div>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="flex-1 flex flex-col min-w-0 overflow-hidden bg-white/30">
+      <header
+        class="h-16 flex items-center justify-between px-6 border-b border-zinc-200 bg-white/60 backdrop-blur-md sticky top-0 z-10"
+      >
+        <button class="md:hidden p-2 -ml-2 text-zinc-500">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="20"
+            height="20"
+            viewBox="0 0 24 24"
+          >
+            <path
+              fill="none"
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M4 5h16M4 12h16M4 19h16"
+            ></path>
+          </svg>
+        </button>
+        <div class="hidden md:flex items-center gap-2 text-sm">
+          <span class="text-zinc-500">Overview</span>
+          <span class="text-zinc-300">/</span>
+          <span class="font-medium text-zinc-900">Faculty</span>
+        </div>
+        <div class="flex items-center gap-4">
+          <div class="relative hidden sm:block group">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              height="16"
+              viewBox="0 0 24 24"
+              class="iconify absolute left-2.5 top-1/2 -translate-y-1/2 text-zinc-400 group-hover:text-zinc-600 transition-colors"
+            >
+              <g
+                fill="none"
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+              >
+                <path d="m21 21l-4.34-4.34"></path>
+                <circle cx="11" cy="11" r="8"></circle>
+              </g>
+            </svg>
+            <input
+              type="text"
+              placeholder="Search faculty..."
+              class="h-9 w-64 pl-9 pr-4 bg-white/50 border border-zinc-200 rounded-md text-sm text-zinc-900 placeholder-zinc-400 focus:outline-none focus:ring-1 focus:ring-zinc-300 focus:border-zinc-300 transition-all focus:bg-white"
+            />
+          </div>
+          <button
+            class="relative p-2 text-zinc-400 hover:text-zinc-900 hover:bg-zinc-100/50 rounded-md transition-colors"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="20"
+              height="20"
+              viewBox="0 0 24 24"
+            >
+              <path
+                fill="none"
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M10.268 21a2 2 0 0 0 3.464 0m-10.47-5.674A1 1 0 0 0 4 17h16a1 1 0 0 0 .74-1.673C19.41 13.956 18 12.499 18 8A6 6 0 0 0 6 8c0 4.499-1.411 5.956-2.738 7.326"
+              ></path>
+            </svg>
+            <span
+              class="absolute top-2 right-2 w-2 h-2 bg-red-500 rounded-full border-2 border-white"
+            ></span>
+          </button>
+        </div>
+      </header>
+
+      <div class="flex-1 overflow-y-auto lg:p-10 pt-6 pr-6 pb-6 pl-6">
+        <div class="max-w-7xl mx-auto space-y-8">
+          <div
+            class="flex flex-col sm:flex-row sm:items-center justify-between gap-4"
+          >
+            <div>
+              <h1 class="text-2xl font-semibold text-zinc-900 tracking-tight">
+                Faculty Members
+              </h1>
+              <p class="text-zinc-500 text-sm mt-1">
+                Manage and view all faculty members across departments.
+              </p>
+            </div>
+            <div class="flex items-center gap-2">
+              <button
+                class="hover:bg-zinc-50 transition-all text-sm font-medium text-zinc-900 bg-white h-9 border-zinc-200 border rounded-md pr-4 pl-4 shadow-sm"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  viewBox="0 0 24 24"
+                  class="inline mr-1"
+                  >
+                  <g
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    >
+                    <path
+                      d="M10 2v7.527a2 2 0 0 1-.211.896L4.72 20.55a1 1 0 0 0 .9 1.45h12.76a1 1 0 0 0 .9-1.45l-5.069-10.127A2 2 0 0 1 14 9.527V2"
+                    ></path>
+                    <path d="M8.5 2h7M7 16h10"></path>
+                  </g>
+                </svg>
+                Filter
+              </button>
+              <button
+                class="hover:bg-zinc-800 shadow-zinc-900/10 flex gap-2 transition-all text-sm font-medium text-white bg-zinc-900 h-9 rounded-md px-4 shadow-lg items-center"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M5 12h14m-7-7v14"
+                  ></path>
+                </svg>
+               <a href="add-faculty.html"> Add Faculty</a>
+              </button>
+            </div>
+          </div>
+
+          <!-- Stats Cards -->
+          <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+            <div
+              class="bg-white/80 backdrop-blur-sm p-4 rounded-xl border border-zinc-200/60 shadow-[0_2px_12px_-4px_rgba(0,0,0,0.02)]"
+            >
+              <div class="flex items-center justify-between mb-2">
+                <div class="p-2 bg-blue-50 text-blue-600 rounded-lg">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="20"
+                    height="20"
+                    viewBox="0 0 24 24"
+                  >
+                    <g
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                    >
+                      <path
+                        d="M16 20V4a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"
+                      ></path>
+                      <rect width="20" height="14" x="2" y="6" rx="2"></rect>
+                    </g>
+                  </svg>
+                </div>
+              </div>
+              <h3 class="text-2xl font-semibold text-zinc-900">845</h3>
+              <p class="text-xs text-zinc-500 uppercase tracking-wide mt-1">
+                Total Faculty
+              </p>
+            </div>
+
+            <div
+              class="bg-white/80 backdrop-blur-sm p-4 rounded-xl border border-zinc-200/60 shadow-[0_2px_12px_-4px_rgba(0,0,0,0.02)]"
+            >
+              <div class="flex items-center justify-between mb-2">
+                <div class="p-2 bg-purple-50 text-purple-600 rounded-lg">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="20"
+                    height="20"
+                    viewBox="0 0 24 24"
+                  >
+                    <g
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                    >
+                      <rect width="18" height="18" x="3" y="3" rx="2"></rect>
+                      <path d="M7 7h10M7 12h10M7 17h10"></path>
+                    </g>
+                  </svg>
+                </div>
+              </div>
+              <h3 class="text-2xl font-semibold text-zinc-900">12</h3>
+              <p class="text-xs text-zinc-500 uppercase tracking-wide mt-1">
+                Departments
+              </p>
+            </div>
+
+            <div
+              class="bg-white/80 backdrop-blur-sm p-4 rounded-xl border border-zinc-200/60 shadow-[0_2px_12px_-4px_rgba(0,0,0,0.02)]"
+            >
+              <div class="flex items-center justify-between mb-2">
+                <div class="p-2 bg-emerald-50 text-emerald-600 rounded-lg">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="20"
+                    height="20"
+                    viewBox="0 0 24 24"
+                  >
+                    <g
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                    >
+                      <path
+                        d="M21.42 10.922a1 1 0 0 0-.019-1.838L12.83 5.18a2 2 0 0 0-1.66 0L2.6 9.08a1 1 0 0 0 0 1.832l8.57 3.908a2 2 0 0 0 1.66 0zM22 10v6"
+                      ></path>
+                      <path d="M6 12.5V16a6 3 0 0 0 12 0v-3.5"></path>
+                    </g>
+                  </svg>
+                </div>
+              </div>
+              <h3 class="text-2xl font-semibold text-zinc-900">156</h3>
+              <p class="text-xs text-zinc-500 uppercase tracking-wide mt-1">
+                PhD Holders
+              </p>
+            </div>
+
+            <div
+              class="bg-white/80 backdrop-blur-sm p-4 rounded-xl border border-zinc-200/60 shadow-[0_2px_12px_-4px_rgba(0,0,0,0.02)]"
+            >
+              <div class="flex items-center justify-between mb-2">
+                <div class="p-2 bg-amber-50 text-amber-600 rounded-lg">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="20"
+                    height="20"
+                    viewBox="0 0 24 24"
+                  >
+                    <g
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                    >
+                      <path
+                        d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"
+                      ></path>
+                      <circle cx="9" cy="7" r="4"></circle>
+                      <path
+                        d="m22 21l-3-3m1-4a4 4 0 1 1-8 0a4 4 0 0 1 8 0"
+                      ></path>
+                    </g>
+                  </svg>
+                </div>
+              </div>
+              <h3 class="text-2xl font-semibold text-zinc-900">18.5</h3>
+              <p class="text-xs text-zinc-500 uppercase tracking-wide mt-1">
+                Avg. Experience (yrs)
+              </p>
+            </div>
+          </div>
+
+          <!-- Faculty Grid -->
+          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <!-- Faculty Member 1 -->
+            <div
+              class="bg-white/80 backdrop-blur-sm border border-zinc-200 rounded-xl shadow-sm p-5 hover:border-zinc-300 transition-all group"
+            >
+              <div class="flex items-start gap-4 mb-4">
+                <div
+                  class="w-16 h-16 rounded-full bg-gradient-to-br from-blue-100 to-blue-200 flex items-center justify-center text-blue-700 text-xl font-semibold border-2 border-white shadow-md"
+                >
+                  SJ
+                </div>
+                <div class="flex-1">
+                  <h3
+                    class="font-semibold text-zinc-900 group-hover:text-blue-600 transition-colors"
+                  >
+                    Dr. Sarah Johnson
+                  </h3>
+                  <p class="text-sm text-zinc-600">Professor</p>
+                  <div class="flex items-center gap-1 mt-1">
+                    <span
+                      class="inline-flex items-center px-2 py-0.5 rounded-full text-xs font-medium bg-blue-50 text-blue-700 border border-blue-100"
+                    >
+                      Computer Science
+                    </span>
+                  </div>
+                </div>
+              </div>
+              <div class="space-y-2 mb-4">
+                <div class="flex items-center gap-2 text-sm text-zinc-600">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="14"
+                    height="14"
+                    viewBox="0 0 24 24"
+                    class="text-zinc-400"
+                  >
+                    <g
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                    >
+                      <path
+                        d="M21.42 10.922a1 1 0 0 0-.019-1.838L12.83 5.18a2 2 0 0 0-1.66 0L2.6 9.08a1 1 0 0 0 0 1.832l8.57 3.908a2 2 0 0 0 1.66 0zM22 10v6"
+                      ></path>
+                      <path d="M6 12.5V16a6 3 0 0 0 12 0v-3.5"></path>
+                    </g>
+                  </svg>
+                  PhD in Computer Science
+                </div>
+                <div class="flex items-center gap-2 text-sm text-zinc-600">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="14"
+                    height="14"
+                    viewBox="0 0 24 24"
+                    class="text-zinc-400"
+                  >
+                    <path
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M8 2v4m8-4v4M3 10h18M5 4h14a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2"
+                    ></path>
+                  </svg>
+                  15 years experience
+                </div>
+                <div class="flex items-center gap-2 text-sm text-zinc-600">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="14"
+                    height="14"
+                    viewBox="0 0 24 24"
+                    class="text-zinc-400"
+                  >
+                    <path
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2m16 2l-8 5l-8-5"
+                    ></path>
+                  </svg>
+                  sarah.j@academia.edu
+                </div>
+              </div>
+              <div class="pt-4 border-t border-zinc-100">
+                <p class="text-xs text-zinc-500 mb-2">Teaches:</p>
+                <div class="flex flex-wrap gap-1">
+                  <span
+                    class="text-xs px-2 py-1 bg-zinc-50 text-zinc-600 rounded border border-zinc-200"
+                    >Data Structures</span
+                  >
+                  <span
+                    class="text-xs px-2 py-1 bg-zinc-50 text-zinc-600 rounded border border-zinc-200"
+                    >Algorithms</span
+                  >
+                  <span
+                    class="text-xs px-2 py-1 bg-zinc-50 text-zinc-600 rounded border border-zinc-200"
+                    >AI</span
+                  >
+                </div>
+              </div>
+            </div>
+
+            <!-- Faculty Member 2 -->
+            <div
+              class="bg-white/80 backdrop-blur-sm border border-zinc-200 rounded-xl shadow-sm p-5 hover:border-zinc-300 transition-all group"
+            >
+              <div class="flex items-start gap-4 mb-4">
+                <div
+                  class="w-16 h-16 rounded-full bg-gradient-to-br from-purple-100 to-purple-200 flex items-center justify-center text-purple-700 text-xl font-semibold border-2 border-white shadow-md"
+                >
+                  MC
+                </div>
+                <div class="flex-1">
+                  <h3
+                    class="font-semibold text-zinc-900 group-hover:text-purple-600 transition-colors"
+                  >
+                    Prof. Michael Chen
+                  </h3>
+                  <p class="text-sm text-zinc-600">Associate Professor</p>
+                  <div class="flex items-center gap-1 mt-1">
+                    <span
+                      class="inline-flex items-center px-2 py-0.5 rounded-full text-xs font-medium bg-purple-50 text-purple-700 border border-purple-100"
+                    >
+                      Mathematics
+                    </span>
+                  </div>
+                </div>
+              </div>
+              <div class="space-y-2 mb-4">
+                <div class="flex items-center gap-2 text-sm text-zinc-600">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="14"
+                    height="14"
+                    viewBox="0 0 24 24"
+                    class="text-zinc-400"
+                  >
+                    <g
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                    >
+                      <path
+                        d="M21.42 10.922a1 1 0 0 0-.019-1.838L12.83 5.18a2 2 0 0 0-1.66 0L2.6 9.08a1 1 0 0 0 0 1.832l8.57 3.908a2 2 0 0 0 1.66 0zM22 10v6"
+                      ></path>
+                      <path d="M6 12.5V16a6 3 0 0 0 12 0v-3.5"></path>
+                    </g>
+                  </svg>
+                  PhD in Mathematics
+                </div>
+                <div class="flex items-center gap-2 text-sm text-zinc-600">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="14"
+                    height="14"
+                    viewBox="0 0 24 24"
+                    class="text-zinc-400"
+                  >
+                    <path
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M8 2v4m8-4v4M3 10h18M5 4h14a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2"
+                    ></path>
+                  </svg>
+                  12 years experience
+                </div>
+                <div class="flex items-center gap-2 text-sm text-zinc-600">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="14"
+                    height="14"
+                    viewBox="0 0 24 24"
+                    class="text-zinc-400"
+                  >
+                    <path
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2m16 2l-8 5l-8-5"
+                    ></path>
+                  </svg>
+                  m.chen@academia.edu
+                </div>
+              </div>
+              <div class="pt-4 border-t border-zinc-100">
+                <p class="text-xs text-zinc-500 mb-2">Teaches:</p>
+                <div class="flex flex-wrap gap-1">
+                  <span
+                    class="text-xs px-2 py-1 bg-zinc-50 text-zinc-600 rounded border border-zinc-200"
+                    >Calculus</span
+                  >
+                  <span
+                    class="text-xs px-2 py-1 bg-zinc-50 text-zinc-600 rounded border border-zinc-200"
+                    >Linear Algebra</span
+                  >
+                </div>
+              </div>
+            </div>
+
+            <!-- Faculty Member 3 -->
+            <div
+              class="bg-white/80 backdrop-blur-sm border border-zinc-200 rounded-xl shadow-sm p-5 hover:border-zinc-300 transition-all group"
+            >
+              <div class="flex items-start gap-4 mb-4">
+                <div
+                  class="w-16 h-16 rounded-full bg-gradient-to-br from-emerald-100 to-emerald-200 flex items-center justify-center text-emerald-700 text-xl font-semibold border-2 border-white shadow-md"
+                >
+                  PS
+                </div>
+                <div class="flex-1">
+                  <h3
+                    class="font-semibold text-zinc-900 group-hover:text-emerald-600 transition-colors"
+                  >
+                    Dr. Priya Sharma
+                  </h3>
+                  <p class="text-sm text-zinc-600">Professor</p>
+                  <div class="flex items-center gap-1 mt-1">
+                    <span
+                      class="inline-flex items-center px-2 py-0.5 rounded-full text-xs font-medium bg-emerald-50 text-emerald-700 border border-emerald-100"
+                    >
+                      Physics
+                    </span>
+                  </div>
+                </div>
+              </div>
+              <div class="space-y-2 mb-4">
+                <div class="flex items-center gap-2 text-sm text-zinc-600">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="14"
+                    height="14"
+                    viewBox="0 0 24 24"
+                    class="text-zinc-400"
+                  >
+                    <g
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                    >
+                      <path
+                        d="M21.42 10.922a1 1 0 0 0-.019-1.838L12.83 5.18a2 2 0 0 0-1.66 0L2.6 9.08a1 1 0 0 0 0 1.832l8.57 3.908a2 2 0 0 0 1.66 0zM22 10v6"
+                      ></path>
+                      <path d="M6 12.5V16a6 3 0 0 0 12 0v-3.5"></path>
+                    </g>
+                  </svg>
+                  PhD in Physics
+                </div>
+                <div class="flex items-center gap-2 text-sm text-zinc-600">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="14"
+                    height="14"
+                    viewBox="0 0 24 24"
+                    class="text-zinc-400"
+                  >
+                    <path
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M8 2v4m8-4v4M3 10h18M5 4h14a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2"
+                    ></path>
+                  </svg>
+                  18 years experience
+                </div>
+                <div class="flex items-center gap-2 text-sm text-zinc-600">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="14"
+                    height="14"
+                    viewBox="0 0 24 24"
+                    class="text-zinc-400"
+                  >
+                    <path
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2m16 2l-8 5l-8-5"
+                    ></path>
+                  </svg>
+                  p.sharma@academia.edu
+                </div>
+              </div>
+              <div class="pt-4 border-t border-zinc-100">
+                <p class="text-xs text-zinc-500 mb-2">Teaches:</p>
+                <div class="flex flex-wrap gap-1">
+                  <span
+                    class="text-xs px-2 py-1 bg-zinc-50 text-zinc-600 rounded border border-zinc-200"
+                    >Thermodynamics</span
+                  >
+                  <span
+                    class="text-xs px-2 py-1 bg-zinc-50 text-zinc-600 rounded border border-zinc-200"
+                    >Quantum Physics</span
+                  >
+                </div>
+              </div>
+            </div>
+
+            <!-- Faculty Member 4 -->
+            <div
+              class="bg-white/80 backdrop-blur-sm border border-zinc-200 rounded-xl shadow-sm p-5 hover:border-zinc-300 transition-all group"
+            >
+              <div class="flex items-start gap-4 mb-4">
+                <div
+                  class="w-16 h-16 rounded-full bg-gradient-to-br from-amber-100 to-amber-200 flex items-center justify-center text-amber-700 text-xl font-semibold border-2 border-white shadow-md"
+                >
+                  RW
+                </div>
+                <div class="flex-1">
+                  <h3
+                    class="font-semibold text-zinc-900 group-hover:text-amber-600 transition-colors"
+                  >
+                    Prof. Robert Williams
+                  </h3>
+                  <p class="text-sm text-zinc-600">Associate Professor</p>
+                  <div class="flex items-center gap-1 mt-1">
+                    <span
+                      class="inline-flex items-center px-2 py-0.5 rounded-full text-xs font-medium bg-amber-50 text-amber-700 border border-amber-100"
+                    >
+                      Business
+                    </span>
+                  </div>
+                </div>
+              </div>
+              <div class="space-y-2 mb-4">
+                <div class="flex items-center gap-2 text-sm text-zinc-600">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="14"
+                    height="14"
+                    viewBox="0 0 24 24"
+                    class="text-zinc-400"
+                  >
+                    <g
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                    >
+                      <path
+                        d="M21.42 10.922a1 1 0 0 0-.019-1.838L12.83 5.18a2 2 0 0 0-1.66 0L2.6 9.08a1 1 0 0 0 0 1.832l8.57 3.908a2 2 0 0 0 1.66 0zM22 10v6"
+                      ></path>
+                      <path d="M6 12.5V16a6 3 0 0 0 12 0v-3.5"></path>
+                    </g>
+                  </svg>
+                  MBA, PhD in Business Admin
+                </div>
+                <div class="flex items-center gap-2 text-sm text-zinc-600">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="14"
+                    height="14"
+                    viewBox="0 0 24 24"
+                    class="text-zinc-400"
+                  >
+                    <path
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M8 2v4m8-4v4M3 10h18M5 4h14a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2"
+                    ></path>
+                  </svg>
+                  20 years experience
+                </div>
+                <div class="flex items-center gap-2 text-sm text-zinc-600">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="14"
+                    height="14"
+                    viewBox="0 0 24 24"
+                    class="text-zinc-400"
+                  >
+                    <path
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2m16 2l-8 5l-8-5"
+                    ></path>
+                  </svg>
+                  r.williams@academia.edu
+                </div>
+              </div>
+              <div class="pt-4 border-t border-zinc-100">
+                <p class="text-xs text-zinc-500 mb-2">Teaches:</p>
+                <div class="flex flex-wrap gap-1">
+                  <span
+                    class="text-xs px-2 py-1 bg-zinc-50 text-zinc-600 rounded border border-zinc-200"
+                    >Marketing</span
+                  >
+                  <span
+                    class="text-xs px-2 py-1 bg-zinc-50 text-zinc-600 rounded border border-zinc-200"
+                    >BBA</span
+                  >
+                </div>
+              </div>
+            </div>
+
+            <!-- Faculty Member 5 -->
+            <div
+              class="bg-white/80 backdrop-blur-sm border border-zinc-200 rounded-xl shadow-sm p-5 hover:border-zinc-300 transition-all group"
+            >
+              <div class="flex items-start gap-4 mb-4">
+                <div
+                  class="w-16 h-16 rounded-full bg-gradient-to-br from-rose-100 to-rose-200 flex items-center justify-center text-rose-700 text-xl font-semibold border-2 border-white shadow-md"
+                >
+                  AP
+                </div>
+                <div class="flex-1">
+                  <h3
+                    class="font-semibold text-zinc-900 group-hover:text-rose-600 transition-colors"
+                  >
+                    Dr. Anjali Patel
+                  </h3>
+                  <p class="text-sm text-zinc-600">Assistant Professor</p>
+                  <div class="flex items-center gap-1 mt-1">
+                    <span
+                      class="inline-flex items-center px-2 py-0.5 rounded-full text-xs font-medium bg-rose-50 text-rose-700 border border-rose-100"
+                    >
+                      Robotics
+                    </span>
+                  </div>
+                </div>
+              </div>
+              <div class="space-y-2 mb-4">
+                <div class="flex items-center gap-2 text-sm text-zinc-600">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="14"
+                    height="14"
+                    viewBox="0 0 24 24"
+                    class="text-zinc-400"
+                  >
+                    <g
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                    >
+                      <path
+                        d="M21.42 10.922a1 1 0 0 0-.019-1.838L12.83 5.18a2 2 0 0 0-1.66 0L2.6 9.08a1 1 0 0 0 0 1.832l8.57 3.908a2 2 0 0 0 1.66 0zM22 10v6"
+                      ></path>
+                      <path d="M6 12.5V16a6 3 0 0 0 12 0v-3.5"></path>
+                    </g>
+                  </svg>
+                  PhD in Robotics
+                </div>
+                <div class="flex items-center gap-2 text-sm text-zinc-600">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="14"
+                    height="14"
+                    viewBox="0 0 24 24"
+                    class="text-zinc-400"
+                  >
+                    <path
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M8 2v4m8-4v4M3 10h18M5 4h14a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2"
+                    ></path>
+                  </svg>
+                  8 years experience
+                </div>
+                <div class="flex items-center gap-2 text-sm text-zinc-600">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="14"
+                    height="14"
+                    viewBox="0 0 24 24"
+                    class="text-zinc-400"
+                  >
+                    <path
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2m16 2l-8 5l-8-5"
+                    ></path>
+                  </svg>
+                  a.patel@academia.edu
+                </div>
+              </div>
+              <div class="pt-4 border-t border-zinc-100">
+                <p class="text-xs text-zinc-500 mb-2">Teaches:</p>
+                <div class="flex flex-wrap gap-1">
+                  <span
+                    class="text-xs px-2 py-1 bg-zinc-50 text-zinc-600 rounded border border-zinc-200"
+                    >Robotics</span
+                  >
+                  <span
+                    class="text-xs px-2 py-1 bg-zinc-50 text-zinc-600 rounded border border-zinc-200"
+                    >Mechatronics</span
+                  >
+                </div>
+              </div>
+            </div>
+
+            <!-- Faculty Member 6 -->
+            <div
+              class="bg-white/80 backdrop-blur-sm border border-zinc-200 rounded-xl shadow-sm p-5 hover:border-zinc-300 transition-all group"
+            >
+              <div class="flex items-start gap-4 mb-4">
+                <div
+                  class="w-16 h-16 rounded-full bg-gradient-to-br from-cyan-100 to-cyan-200 flex items-center justify-center text-cyan-700 text-xl font-semibold border-2 border-white shadow-md"
+                >
+                  DL
+                </div>
+                <div class="flex-1">
+                  <h3
+                    class="font-semibold text-zinc-900 group-hover:text-cyan-600 transition-colors"
+                  >
+                    Dr. David Lee
+                  </h3>
+                  <p class="text-sm text-zinc-600">Professor</p>
+                  <div class="flex items-center gap-1 mt-1">
+                    <span
+                      class="inline-flex items-center px-2 py-0.5 rounded-full text-xs font-medium bg-cyan-50 text-cyan-700 border border-cyan-100"
+                    >
+                      Mechanical Eng
+                    </span>
+                  </div>
+                </div>
+              </div>
+              <div class="space-y-2 mb-4">
+                <div class="flex items-center gap-2 text-sm text-zinc-600">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="14"
+                    height="14"
+                    viewBox="0 0 24 24"
+                    class="text-zinc-400"
+                  >
+                    <g
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                    >
+                      <path
+                        d="M21.42 10.922a1 1 0 0 0-.019-1.838L12.83 5.18a2 2 0 0 0-1.66 0L2.6 9.08a1 1 0 0 0 0 1.832l8.57 3.908a2 2 0 0 0 1.66 0zM22 10v6"
+                      ></path>
+                      <path d="M6 12.5V16a6 3 0 0 0 12 0v-3.5"></path>
+                    </g>
+                  </svg>
+                  PhD in Mechanical Eng
+                </div>
+                <div class="flex items-center gap-2 text-sm text-zinc-600">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="14"
+                    height="14"
+                    viewBox="0 0 24 24"
+                    class="text-zinc-400"
+                  >
+                    <path
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M8 2v4m8-4v4M3 10h18M5 4h14a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2"
+                    ></path>
+                  </svg>
+                  22 years experience
+                </div>
+                <div class="flex items-center gap-2 text-sm text-zinc-600">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="14"
+                    height="14"
+                    viewBox="0 0 24 24"
+                    class="text-zinc-400"
+                  >
+                    <path
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2m16 2l-8 5l-8-5"
+                    ></path>
+                  </svg>
+                  d.lee@academia.edu
+                </div>
+              </div>
+              <div class="pt-4 border-t border-zinc-100">
+                <p class="text-xs text-zinc-500 mb-2">Teaches:</p>
+                <div class="flex flex-wrap gap-1">
+                  <span
+                    class="text-xs px-2 py-1 bg-zinc-50 text-zinc-600 rounded border border-zinc-200"
+                    >Fluid Mechanics</span
+                  >
+                  <span
+                    class="text-xs px-2 py-1 bg-zinc-50 text-zinc-600 rounded border border-zinc-200"
+                    >Automotive</span
+                  >
+                </div>
+              </div>
+            </div>
+
+            <!-- Faculty Member 7 -->
+            <div
+              class="bg-white/80 backdrop-blur-sm border border-zinc-200 rounded-xl shadow-sm p-5 hover:border-zinc-300 transition-all group"
+            >
+              <div class="flex items-start gap-4 mb-4">
+                <div
+                  class="w-16 h-16 rounded-full bg-gradient-to-br from-indigo-100 to-indigo-200 flex items-center justify-center text-indigo-700 text-xl font-semibold border-2 border-white shadow-md"
+                >
+                  EG
+                </div>
+                <div class="flex-1">
+                  <h3
+                    class="font-semibold text-zinc-900 group-hover:text-indigo-600 transition-colors"
+                  >
+                    Dr. Emily Garcia
+                  </h3>
+                  <p class="text-sm text-zinc-600">Associate Professor</p>
+                  <div class="flex items-center gap-1 mt-1">
+                    <span
+                      class="inline-flex items-center px-2 py-0.5 rounded-full text-xs font-medium bg-indigo-50 text-indigo-700 border border-indigo-100"
+                    >
+                      Chemical Eng
+                    </span>
+                  </div>
+                </div>
+              </div>
+              <div class="space-y-2 mb-4">
+                <div class="flex items-center gap-2 text-sm text-zinc-600">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="14"
+                    height="14"
+                    viewBox="0 0 24 24"
+                    class="text-zinc-400"
+                  >
+                    <g
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                    >
+                      <path
+                        d="M21.42 10.922a1 1 0 0 0-.019-1.838L12.83 5.18a2 2 0 0 0-1.66 0L2.6 9.08a1 1 0 0 0 0 1.832l8.57 3.908a2 2 0 0 0 1.66 0zM22 10v6"
+                      ></path>
+                      <path d="M6 12.5V16a6 3 0 0 0 12 0v-3.5"></path>
+                    </g>
+                  </svg>
+                  PhD in Chemical Engineering
+                </div>
+                <div class="flex items-center gap-2 text-sm text-zinc-600">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="14"
+                    height="14"
+                    viewBox="0 0 24 24"
+                    class="text-zinc-400"
+                  >
+                    <path
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M8 2v4m8-4v4M3 10h18M5 4h14a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2"
+                    ></path>
+                  </svg>
+                  14 years experience
+                </div>
+                <div class="flex items-center gap-2 text-sm text-zinc-600">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="14"
+                    height="14"
+                    viewBox="0 0 24 24"
+                    class="text-zinc-400"
+                  >
+                    <path
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2m16 2l-8 5l-8-5"
+                    ></path>
+                  </svg>
+                  e.garcia@academia.edu
+                </div>
+              </div>
+              <div class="pt-4 border-t border-zinc-100">
+                <p class="text-xs text-zinc-500 mb-2">Teaches:</p>
+                <div class="flex flex-wrap gap-1">
+                  <span
+                    class="text-xs px-2 py-1 bg-zinc-50 text-zinc-600 rounded border border-zinc-200"
+                    >Reaction Engineering</span
+                  >
+                  <span
+                    class="text-xs px-2 py-1 bg-zinc-50 text-zinc-600 rounded border border-zinc-200"
+                    >Thermodynamics</span
+                  >
+                </div>
+              </div>
+            </div>
+
+            <!-- Faculty Member 8 -->
+            <div
+              class="bg-white/80 backdrop-blur-sm border border-zinc-200 rounded-xl shadow-sm p-5 hover:border-zinc-300 transition-all group"
+            >
+              <div class="flex items-start gap-4 mb-4">
+                <div
+                  class="w-16 h-16 rounded-full bg-gradient-to-br from-teal-100 to-teal-200 flex items-center justify-center text-teal-700 text-xl font-semibold border-2 border-white shadow-md"
+                >
+                  JM
+                </div>
+                <div class="flex-1">
+                  <h3
+                    class="font-semibold text-zinc-900 group-hover:text-teal-600 transition-colors"
+                  >
+                    Prof. James Martinez
+                  </h3>
+                  <p class="text-sm text-zinc-600">Professor</p>
+                  <div class="flex items-center gap-1 mt-1">
+                    <span
+                      class="inline-flex items-center px-2 py-0.5 rounded-full text-xs font-medium bg-teal-50 text-teal-700 border border-teal-100"
+                    >
+                      Aerospace Eng
+                    </span>
+                  </div>
+                </div>
+              </div>
+              <div class="space-y-2 mb-4">
+                <div class="flex items-center gap-2 text-sm text-zinc-600">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="14"
+                    height="14"
+                    viewBox="0 0 24 24"
+                    class="text-zinc-400"
+                  >
+                    <g
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                    >
+                      <path
+                        d="M21.42 10.922a1 1 0 0 0-.019-1.838L12.83 5.18a2 2 0 0 0-1.66 0L2.6 9.08a1 1 0 0 0 0 1.832l8.57 3.908a2 2 0 0 0 1.66 0zM22 10v6"
+                      ></path>
+                      <path d="M6 12.5V16a6 3 0 0 0 12 0v-3.5"></path>
+                    </g>
+                  </svg>
+                  PhD in Aerospace Engineering
+                </div>
+                <div class="flex items-center gap-2 text-sm text-zinc-600">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="14"
+                    height="14"
+                    viewBox="0 0 24 24"
+                    class="text-zinc-400"
+                  >
+                    <path
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M8 2v4m8-4v4M3 10h18M5 4h14a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2"
+                    ></path>
+                  </svg>
+                  25 years experience
+                </div>
+                <div class="flex items-center gap-2 text-sm text-zinc-600">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="14"
+                    height="14"
+                    viewBox="0 0 24 24"
+                    class="text-zinc-400"
+                  >
+                    <path
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2m16 2l-8 5l-8-5"
+                    ></path>
+                  </svg>
+                  j.martinez@academia.edu
+                </div>
+              </div>
+              <div class="pt-4 border-t border-zinc-100">
+                <p class="text-xs text-zinc-500 mb-2">Teaches:</p>
+                <div class="flex flex-wrap gap-1">
+                  <span
+                    class="text-xs px-2 py-1 bg-zinc-50 text-zinc-600 rounded border border-zinc-200"
+                    >Aerospace</span
+                  >
+                  <span
+                    class="text-xs px-2 py-1 bg-zinc-50 text-zinc-600 rounded border border-zinc-200"
+                    >Fluid Dynamics</span
+                  >
+                </div>
+              </div>
+            </div>
+
+            <!-- Faculty Member 9 -->
+            <div
+              class="bg-white/80 backdrop-blur-sm border border-zinc-200 rounded-xl shadow-sm p-5 hover:border-zinc-300 transition-all group"
+                 >
+              <div class="flex items-start gap-4 mb-4">
+                <div
+                  class="w-16 h-16 rounded-full bg-gradient-to-br from-pink-100 to-pink-200 flex items-center justify-center text-pink-700 text-xl font-semibold border-2 border-white shadow-md"
+                >
+                  LT
+                </div>
+                <div class="flex-1">
+                  <h3
+                    class="font-semibold text-zinc-900 group-hover:text-pink-600 transition-colors"
+                  >
+                    Dr. Lisa Thompson
+                  </h3>
+                  <p class="text-sm text-zinc-600">Assistant Professor</p>
+                  <div class="flex items-center gap-1 mt-1">
+                    <span
+                      class="inline-flex items-center px-2 py-0.5 rounded-full text-xs font-medium bg-pink-50 text-pink-700 border border-pink-100"
+                    >
+                      Information Tech
+                    </span>
+                  </div>
+                </div>
+              </div>
+              <div class="space-y-2 mb-4">
+                <div class="flex items-center gap-2 text-sm text-zinc-600">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="14"
+                    height="14"
+                    viewBox="0 0 24 24"
+                    class="text-zinc-400"
+                  >
+                    <g
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                    >
+                      <path
+                        d="M21.42 10.922a1 1 0 0 0-.019-1.838L12.83 5.18a2 2 0 0 0-1.66 0L2.6 9.08a1 1 0 0 0 0 1.832l8.57 3.908a2 2 0 0 0 1.66 0zM22 10v6"
+                      ></path>
+                      <path d="M6 12.5V16a6 3 0 0 0 12 0v-3.5"></path>
+                    </g>
+                  </svg>
+                  M.Tech in IT
+                </div>
+                <div class="flex items-center gap-2 text-sm text-zinc-600">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="14"
+                    height="14"
+                    viewBox="0 0 24 24"
+                    class="text-zinc-400"
+                  >
+                    <path
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M8 2v4m8-4v4M3 10h18M5 4h14a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2"
+                    ></path>
+                  </svg>
+                  6 years experience
+                </div>
+                <div class="flex items-center gap-2 text-sm text-zinc-600">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="14"
+                    height="14"
+                    viewBox="0 0 24 24"
+                    class="text-zinc-400"
+                  >
+                    <path
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2m16 2l-8 5l-8-5"
+                    ></path>
+                  </svg>
+                  l.thompson@academia.edu
+                </div>
+              </div>
+              <div class="pt-4 border-t border-zinc-100">
+                <p class="text-xs text-zinc-500 mb-2">Teaches:</p>
+                <div class="flex flex-wrap gap-1">
+                  <span
+                    class="text-xs px-2 py-1 bg-zinc-50 text-zinc-600 rounded border border-zinc-200"
+                    >Diploma in CA</span
+                  >
+                  <span
+                    class="text-xs px-2 py-1 bg-zinc-50 text-zinc-600 rounded border border-zinc-200"
+                    >O Level</span
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Pagination -->
+          <div
+            class="flex items-center justify-between pt-6 border-t border-zinc-200"
+          >
+            <p class="text-sm text-zinc-600">
+              Showing <span class="font-medium">9</span> of
+              <span class="font-medium">845</span> faculty members
+            </p>
+            <div class="flex gap-2">
+              <button
+                class="px-3 py-2 border border-zinc-200 rounded-md text-sm font-medium text-zinc-600 hover:bg-zinc-50 transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
+                disabled
+              >
+                Previous
+              </button>
+              <button
+                class="px-3 py-2 border border-zinc-200 rounded-md text-sm font-medium bg-zinc-900 text-white hover:bg-zinc-800 transition-colors"
+              >
+                1
+              </button>
+              <button
+                class="px-3 py-2 border border-zinc-200 rounded-md text-sm font-medium text-zinc-600 hover:bg-zinc-50 transition-colors"
+              >
+                2
+              </button>
+              <button
+                class="px-3 py-2 border border-zinc-200 rounded-md text-sm font-medium text-zinc-600 hover:bg-zinc-50 transition-colors"
+              >
+                3
+              </button>
+              <button
+                class="px-3 py-2 border border-zinc-200 rounded-md text-sm font-medium text-zinc-600 hover:bg-zinc-50 transition-colors"
+              >
+                Next
+              </button>
+            </div>
+          </div>
+
+          <div
+            class="flex items-center justify-between pt-8 pb-4 border-t border-zinc-200"
+          >
+            <p class="text-xs text-zinc-400">© 2024 Academia System Inc.</p>
+            <div class="flex gap-4 text-xs text-zinc-500">
+              <a href="#" class="hover:text-zinc-900">Privacy</a>
+              <a href="#" class="hover:text-zinc-900">Help</a>
+              <a href="#" class="hover:text-zinc-900">Status</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
